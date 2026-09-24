@@ -31,18 +31,28 @@ class CorpusSpec:
         return asdict(self)
 
 
-def parse_json(text):
-    """Extract the first JSON array/object from an LLM reply (tolerates code fences and prose)."""
+def parse_json(text, want=None):
+    """Extract a JSON array from an LLM reply.  Reasoning models often think aloud (with brackets) before
+    answering, so the LAST bracket-balanced, parseable array is returned; `want` = 'dicts' or 'strings'
+    additionally requires the element type."""
     if not text:
         return None
     text = re.sub(r"```(?:json)?", "", text)
-    for pat in (r"\[.*\]", r"\{.*\}"):
-        m = re.search(pat, text, re.S)
-        if m:
-            try:
-                return json.loads(m.group(0))
-            except json.JSONDecodeError:
-                continue
+    for end in reversed([i for i, ch in enumerate(text) if ch == "]"]):
+        depth = 0
+        for start in range(end, -1, -1):
+            depth += text[start] == "]"
+            depth -= text[start] == "["
+            if depth == 0:
+                try:
+                    got = json.loads(text[start:end + 1])
+                except ValueError:
+                    break
+                if isinstance(got, list) and got and (
+                        want is None or (want == "dicts" and all(isinstance(g, dict) for g in got))
+                        or (want == "strings" and all(isinstance(g, str) for g in got))):
+                    return got
+                break
     return None
 
 
@@ -71,9 +81,9 @@ def plan_queries(spec: CorpusSpec, n: int = 10, log=None) -> tuple[list[str], st
             "bond lengths, and reviews. Each query under 14 words, no boolean operators. "
             "Return ONLY a JSON array of strings.")
         try:
-            text, model = llm.chat(prompt, system="You are a literature-search agent for X-ray spectroscopy.",
-                                   temperature=0.3, max_tokens=800)
-            got = parse_json(text)
+            text, model = llm.chat(prompt, system="You are a literature-search agent for X-ray spectroscopy. "
+                                   "Reply with the JSON array only.", temperature=0.3, max_tokens=6000)
+            got = parse_json(text, want="strings")
             if isinstance(got, list):
                 qs = [str(q).strip() for q in got if str(q).strip()][:n]
                 if len(qs) >= 4:
@@ -136,16 +146,19 @@ def screen(records: list[dict], spec: CorpusSpec, threshold: float = 0.6, batch:
             listing = "\n".join(f"{i}. {r['title']} ({r.get('year') or ''}) :: {(r.get('abstract') or '')[:600]}"
                                 for i, r in enumerate(chunk))
             try:
-                text, model = llm.chat(rubric + listing, system="You screen papers for a spectroscopy literature corpus.",
-                                       temperature=0.0, max_tokens=1800)
+                text, model = llm.chat(rubric + listing, system="You screen papers for a spectroscopy literature corpus. "
+                                       "Reply with the JSON array only.", temperature=0.0, max_tokens=8000)
             except llm.LLMUnavailable as exc:
                 if log:
-                    log(f"LLM screening failed for batch {s // batch}: {exc}")
+                    log(f"LLM screening FAILED for batch {s // batch}: {exc}")
                 continue
-            got = parse_json(text)
+            got = parse_json(text, want="dicts")
             if not isinstance(got, list):
+                if log:
+                    log(f"LLM screening FAILED for batch {s // batch}: no JSON array in reply ({len(text)} chars)")
                 continue
             screener = model
+            n_scored = 0
             for item in got:
                 try:
                     i, sc = int(item["id"]), float(item["score"])
@@ -154,8 +167,14 @@ def screen(records: list[dict], spec: CorpusSpec, threshold: float = 0.6, batch:
                 if 0 <= i < len(chunk):
                     chunk[i].update(relevance=max(0.0, min(1.0, sc)), screen_reason=str(item.get("reason", ""))[:200],
                                     screened_by=model)
+                    n_scored += 1
             if log:
-                log(f"   screened {min(s + batch, len(pool))}/{len(pool)} with {model}")
+                log(f"   screened {min(s + batch, len(pool))}/{len(pool)} with {model}: {n_scored}/{len(chunk)} scored")
+        unscored = [r for r in pool if r["screened_by"] == "heuristic"]
+        for r in unscored:
+            r["screened_by"] = "heuristic (LLM batch failed)"
+        if log and unscored:
+            log(f"   WARNING: {len(unscored)} of {len(pool)} records kept their heuristic score (LLM batch failures)")
     keep = [r for r in records if r["relevance"] >= threshold]
     keep.sort(key=lambda r: (-r["relevance"], -(r.get("year") or 0)))
     return keep, screener

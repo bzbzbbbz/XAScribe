@@ -1,0 +1,2322 @@
+{
+  "spec": {
+    "element": "Ni",
+    "edge": "K",
+    "material": "layered NMC lithium-ion cathode",
+    "properties": [
+      "oxidation state",
+      "bond length"
+    ],
+    "extra_terms": [],
+    "from_year": 1995,
+    "target_papers": 25,
+    "exclude_dois": [
+      "10.1021/acs.jpcc.0c08095"
+    ],
+    "exclude_title_patterns": [
+      "Cathode Lithiation Mechanism and Extended Cycling Effects Using Operando X-ray Absorption Spectroscopy"
+    ]
+  },
+  "started": "2026-09-24T16:01:59",
+  "finished": "2026-09-24T16:10:07",
+  "planner": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "screener": "z-ai/glm-5.2:free",
+  "queries": [
+    "Ni K-edge XANES layered NMC cathode",
+    "Operando Ni K-edge XAS NMC charge discharge",
+    "Ni oxidation state calibration NMC reference compounds",
+    "EXAFS Ni-O bond length layered NMC",
+    "Charge compensation Ni redox NMC cathode",
+    "In situ Ni K-edge XANES NMC cycling",
+    "Ni K-edge valence calibration standards NMC",
+    "EXAFS local structure Ni NMC cathode",
+    "Review Ni K-edge XAS NMC cathode",
+    "Ni K-edge XANES EXAFS NMC state charge"
+  ],
+  "search_counts": {
+    "raw_hits": {
+      "openalex": 250,
+      "europepmc": 240,
+      "arxiv": 46
+    },
+    "raw_total": 536,
+    "unique": 257
+  },
+  "excluded": [],
+  "n_records": 257,
+  "n_passed_screening": 16,
+  "n_papers": 16,
+  "n_full_text": 12,
+  "n_chunks": 869,
+  "index_backend": "dense",
+  "threshold": 0.6,
+  "papers": [
+    {
+      "doc_id": "10.1557_s43578-026-01938-y",
+      "citation": "A. Braun, A. Rulev, S. Erat, M. Aycibin, E. Uslu, M. Winter et al., Experimental and computational structure study of the commercial NMC622 lithium-ion battery electrode, Journal of materials research, 2026, 41, 2589–2603, DOI: 10.1557/s43578-026-01938-y.",
+      "doi": "10.1557/s43578-026-01938-y",
+      "title": "Experimental and computational structure study of the commercial NMC622 lithium-ion battery electrode.",
+      "year": 2026,
+      "relevance": 1.0,
+      "screen_reason": "TM K-edge XANES/EXAFS on NMC622 cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "europepmc:PMC13588921",
+      "abstract_only": false,
+      "n_chunks": 68
+    },
+    {
+      "doc_id": "10.1021_acs.chemmater.5c01824",
+      "citation": "J. I. Preimesberger, C. K. Kirwa, E. Allen, N. S. Dutta, E. Wang, F. Dogan et al., Effect of Annealing on Direct Recycled NMC Cathodes, Chemistry of materials : a publication of the American Chemical Society, 2025, 37, 9406–9419, DOI: 10.1021/acs.chemmater.5c01824.",
+      "doi": "10.1021/acs.chemmater.5c01824",
+      "title": "Effect of Annealing on Direct Recycled NMC Cathodes.",
+      "year": 2025,
+      "relevance": 1.0,
+      "screen_reason": "Ni XANES on recycled NMC cathode material",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "europepmc:PMC12874368",
+      "abstract_only": false,
+      "n_chunks": 72
+    },
+    {
+      "doc_id": "10.1002_aenm.202400190",
+      "citation": "J. Guo, Y. Xu, M. Exner, X. Huang, Y. Li, Y. Liu et al., Unravelling the Mechanism of Pulse Current Charging for Enhancing the Stability of Commercial LiNi0.5Mn0.3Co0.2O2/Graphite Lithium‐Ion Batteries, Advanced Energy Materials, 2024, 14, DOI: 10.1002/aenm.202400190.",
+      "doi": "10.1002/aenm.202400190",
+      "title": "Unravelling the Mechanism of Pulse Current Charging for Enhancing the Stability of Commercial LiNi0.5Mn0.3Co0.2O2/Graphite Lithium‐Ion Batteries",
+      "year": 2024,
+      "relevance": 1.0,
+      "screen_reason": "Operando XAS on NMC532 layered cathode, directly target corpus.",
+      "screened_by": "z-ai/glm-5.2:free",
+      "full_text_source": "https://edoc.hu-berlin.de/bitstreams/f2015d12-c796-4a11-b388-0e07fb57f253/download",
+      "abstract_only": false,
+      "n_chunks": 80
+    },
+    {
+      "doc_id": "10.1149_1945-7111_ab8a9d",
+      "citation": "C. Usubelli, M. M. Besli, S. Kuppan, N. Jiang, M. M. Metzger, A. Dinia et al., Understanding the Overlithiation Properties of LiNi 0.6 Mn 0.2 Co 0.2 O 2 Using Electrochemistry and Depth-Resolved X-ray Absorption Spectroscopy, Journal of The Electrochemical Society, 2020, 167, 080514, DOI: 10.1149/1945-7111/ab8a9d.",
+      "doi": "10.1149/1945-7111/ab8a9d",
+      "title": "Understanding the Overlithiation Properties of LiNi 0.6 Mn 0.2 Co 0.2 O 2 Using Electrochemistry and Depth-Resolved X-ray Absorption Spectroscopy",
+      "year": 2020,
+      "relevance": 1.0,
+      "screen_reason": "Depth-resolved Ni K-edge XAS on NMC622 layered cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "abstract",
+      "abstract_only": true,
+      "n_chunks": 2
+    },
+    {
+      "doc_id": "10.1149_2.1151902jes",
+      "citation": "R. Jung, F. Linsenmann, R. Thomas, J. Wandt, S. Solchenbach, F. Maglia et al., Nickel, Manganese, and Cobalt Dissolution from Ni-Rich NMC and Their Effects on NMC622-Graphite Cells, Journal of The Electrochemical Society, 2019, 166, A378–A389, DOI: 10.1149/2.1151902jes.",
+      "doi": "10.1149/2.1151902jes",
+      "title": "Nickel, Manganese, and Cobalt Dissolution from Ni-Rich NMC and Their Effects on NMC622-Graphite Cells",
+      "year": 2019,
+      "relevance": 1.0,
+      "screen_reason": "Operando XAS on Ni-rich NMC622 dissolution",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "abstract",
+      "abstract_only": true,
+      "n_chunks": 2
+    },
+    {
+      "doc_id": "10.1021_nl502090z",
+      "citation": "F. Yang, Y. Liu, S. K. Martha, Z. Wu, J. C. Andrews, G. E. Ice et al., Nanoscale Morphological and Chemical Changes of High Voltage Lithium–Manganese Rich NMC Composite Cathodes with Cycling, Nano Letters, 2014, 14, 4334–4341, DOI: 10.1021/nl502090z.",
+      "doi": "10.1021/nl502090z",
+      "title": "Nanoscale Morphological and Chemical Changes of High Voltage Lithium–Manganese Rich NMC Composite Cathodes with Cycling",
+      "year": 2014,
+      "relevance": 1.0,
+      "screen_reason": "Ni K-edge XANES on layered NMC cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "abstract",
+      "abstract_only": true,
+      "n_chunks": 2
+    },
+    {
+      "doc_id": "10.1002_advs.77138",
+      "citation": "B. Ying, Z. Teng, J. Wang, H. Tian, C. von Petersdorff-Campen, R. T. Tolla et al., TiO6 as a Compensatory Structural Unit in Co-Free, High-Ni Layered Oxide for Durable Lithium-Ion Batteries, Advanced science (Weinheim, Baden-Wurttemberg, Germany), 2026, e77138, DOI: 10.1002/advs.77138.",
+      "doi": "10.1002/advs.77138",
+      "title": "TiO6 as a Compensatory Structural Unit in Co-Free, High-Ni Layered Oxide for Durable Lithium-Ion Batteries.",
+      "year": 2026,
+      "relevance": 0.7,
+      "screen_reason": "Ni EXAFS on Co-free layered oxide cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 79
+    },
+    {
+      "doc_id": "arXiv_2503.22383",
+      "citation": "J. J. H. Togonon, J.-N. Chotard, A. Longo, L. Stievano, L. Croguennec and A. Iadecola, Insights on the role of the covalent Ni-O bonds in LiNiO2 positive electrodes: A combined hard X-ray spectroscopy study, arXiv preprint, 2025, arXiv:2503.22383.",
+      "doi": "",
+      "title": "Insights on the role of the covalent Ni-O bonds in LiNiO2 positive electrodes: A combined hard X-ray spectroscopy study",
+      "year": 2025,
+      "relevance": 0.7,
+      "screen_reason": "Hard X-ray spectroscopy on LiNiO2 Ni-O bonds",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 58
+    },
+    {
+      "doc_id": "10.1002_cssc.202401796",
+      "citation": "M. Colalongo, B. Ali, N. Vostrov, M. Ronovský, M. Mirolo, V. Vinci et al., Operando Investigation of Zr Doping in NMC811 Cathode for High Energy Density Lithium Ion Batteries, ChemSusChem, 2025, 18, e202401796, DOI: 10.1002/cssc.202401796.",
+      "doi": "10.1002/cssc.202401796",
+      "title": "Operando Investigation of Zr Doping in NMC811 Cathode for High Energy Density Lithium Ion Batteries.",
+      "year": 2025,
+      "relevance": 0.7,
+      "screen_reason": "NMC811 cathode with ex situ XAS, likely includes Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free",
+      "full_text_source": "europepmc:PMC11997945",
+      "abstract_only": false,
+      "n_chunks": 62
+    },
+    {
+      "doc_id": "10.1021_acsami.3c15670",
+      "citation": "H. Dai, L. Gomes, D. Maxwell, S. Zamani, K. Yang, D. Atienza et al., Exploring the Role of an Electrolyte Additive in Suppressing Surface Reconstruction of a Ni-Rich NMC Cathode at Ultrahigh Voltage via Enhanced In Situ and Operando Characterization Methods, ACS applied materials & interfaces, 2024, 16, 8639–8654, DOI: 10.1021/acsami.3c15670.",
+      "doi": "10.1021/acsami.3c15670",
+      "title": "Exploring the Role of an Electrolyte Additive in Suppressing Surface Reconstruction of a Ni-Rich NMC Cathode at Ultrahigh Voltage via Enhanced In Situ and Operando Characterization Methods.",
+      "year": 2024,
+      "relevance": 0.7,
+      "screen_reason": "NMC cathode with operando XAS, likely includes Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 89
+    },
+    {
+      "doc_id": "10.1002_aenm.202401413",
+      "citation": "Q. Jacquet, N. Mozhzhukhina, P. N. O. Gillespie, G. Wittmann, L. P. Ramirez, F. G. Capone et al., A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2, arXiv preprint, 2024, arXiv:2403.18919, DOI: 10.1002/aenm.202401413.",
+      "doi": "10.1002/aenm.202401413",
+      "title": "A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2",
+      "year": 2024,
+      "relevance": 0.7,
+      "screen_reason": "Correlative spectroscopy on layered Li/Na nickel oxide cathodes",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "https://arxiv.org/pdf/2403.18919",
+      "abstract_only": false,
+      "n_chunks": 108
+    },
+    {
+      "doc_id": "10.1016_j.joule.2023.06.017",
+      "citation": "A. R. Genreith‐Schriever, H. Banerjee, A. S. Menon, E. N. Bassey, L. F. J. Piper, C. P. Grey et al., Oxygen hole formation controls stability in LiNiO2 cathodes, Joule, 2023, 7, 1623–1640, DOI: 10.1016/j.joule.2023.06.017.",
+      "doi": "10.1016/j.joule.2023.06.017",
+      "title": "Oxygen hole formation controls stability in LiNiO2 cathodes",
+      "year": 2023,
+      "relevance": 0.7,
+      "screen_reason": "Oxygen redox study on layered LiNiO2 cathode analogue",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "https://arxiv.org/pdf/2205.10462",
+      "abstract_only": false,
+      "n_chunks": 76
+    },
+    {
+      "doc_id": "10.1021_acsenergylett.9b02147",
+      "citation": "N. Li, S. Sallis, J. K. Papp, J. C.-C. Wei, B. D. McCloskey, W. Yang et al., Unraveling the Cationic and Anionic Redox Reactions in a Conventional Layered Oxide Cathode, ACS Energy Letters, 2019, 4, 2836–2842, DOI: 10.1021/acsenergylett.9b02147.",
+      "doi": "10.1021/acsenergylett.9b02147",
+      "title": "Unraveling the Cationic and Anionic Redox Reactions in a Conventional Layered Oxide Cathode",
+      "year": 2019,
+      "relevance": 0.7,
+      "screen_reason": "Ni K-edge XAS on LiNiO2 layered oxide",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "abstract",
+      "abstract_only": true,
+      "n_chunks": 2
+    },
+    {
+      "doc_id": "10.1021_acs.chemmater.9b02568",
+      "citation": "X. Shan, F. Guo, K. L. Page, J. C. Neuefeind, B. Ravel, M. Abeykoon et al., Framework Doping of Ni Enhances Pseudocapacitive Na-Ion Storage of (Ni)MnO2 Layered Birnessite, Chemistry of Materials, 2019, 31, 8774–8786, DOI: 10.1021/acs.chemmater.9b02568.",
+      "doi": "10.1021/acs.chemmater.9b02568",
+      "title": "Framework Doping of Ni Enhances Pseudocapacitive Na-Ion Storage of (Ni)MnO2 Layered Birnessite",
+      "year": 2019,
+      "relevance": 0.7,
+      "screen_reason": "Ni K-edge XANES on layered Ni-doped MnO2 cathode analogue",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 70
+    },
+    {
+      "doc_id": "10.1038_srep21479",
+      "citation": "L. Nowack, D. Grolimund, V. A. Samson, F. Marone and V. Wood, Rapid Mapping of Lithiation Dynamics in Transition Metal Oxide Particles with Operando X-ray Absorption Spectroscopy, Scientific Reports, 2016, 6, 21479, DOI: 10.1038/srep21479.",
+      "doi": "10.1038/srep21479",
+      "title": "Rapid Mapping of Lithiation Dynamics in Transition Metal Oxide Particles with Operando X-ray Absorption Spectroscopy",
+      "year": 2016,
+      "relevance": 0.7,
+      "screen_reason": "Operando XANES of layered LiMO2 cathodes including Ni, closely analogous.",
+      "screened_by": "z-ai/glm-5.2:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 39
+    },
+    {
+      "doc_id": "10.1039_c5cp02943k",
+      "citation": "J. R. Croy, H. H. Iddir, K. G. Gallagher, C. S. Johnson, R. Benedek and M. Balasubramanian, First-charge instabilities of layered-layered lithium-ion-battery materials, Physical Chemistry Chemical Physics, 2015, 17, 24382–24391, DOI: 10.1039/c5cp02943k.",
+      "doi": "10.1039/c5cp02943k",
+      "title": "First-charge instabilities of layered-layered lithium-ion-battery materials",
+      "year": 2015,
+      "relevance": 0.7,
+      "screen_reason": "Li-rich layered oxide with Ni, XAS for oxidation states, analogous.",
+      "screened_by": "z-ai/glm-5.2:free",
+      "full_text_source": "cache",
+      "abstract_only": false,
+      "n_chunks": 60
+    }
+  ],
+  "screening": [
+    {
+      "doi": "10.1038/s41586-022-05115-z",
+      "title": "Compositionally complex doping for zero-strain zero-cobalt layered cathodes",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s41918-019-00053-3",
+      "title": "Degradation Mechanisms and Mitigation Strategies of Nickel-Rich NMC-Based Lithium-Ion Batteries",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41586-022-04689-y",
+      "title": "Origin of structural degradation in Li-rich layered oxide cathode",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202103005",
+      "title": "A Review of Degradation Mechanisms and Recent Achievements for Ni‐Rich Cathode‐Based Li‐Ion Batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/am506712c",
+      "title": "Structural Changes and Thermal Stability of Charged LiNi x Mn y Co z O 2 Cathode Materials Studied by Combined In Situ Time-Resolved XRD and Mass Spectroscopy",
+      "year": 2014,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/nl502090z",
+      "title": "Nanoscale Morphological and Chemical Changes of High Voltage Lithium–Manganese Rich NMC Composite Cathodes with Cycling",
+      "year": 2014,
+      "relevance": 1.0,
+      "reason": "Ni K-edge XANES on layered NMC cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/s41586-018-0015-4",
+      "title": "Reversible Mn2+/Mn4+ double redox in lithium-excess cathode materials",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41560-023-01267-y",
+      "title": "Long-life lithium-ion batteries realized by low-Ni, Co-free cathode chemistry",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/adfm.201900247",
+      "title": "High‐Voltage Charging‐Induced Strain, Heterogeneity, and Micro‐Cracks in Secondary Particles of a Nickel‐Rich Layered Cathode Material",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.201900551",
+      "title": "Oxygen Release Degradation in Li‐Ion Battery Cathode Materials: Mechanisms and Mitigating Approaches",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-024-52768-7",
+      "title": "Electronic structure formed by Y2O3-doping in lithium position assists improvement of charging-voltage for high-nickel cathodes",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-022-35667-7",
+      "title": "A gradient oxy-thiophosphate-coated Ni-rich layered oxide cathode for stable all-solid-state Li-ion batteries",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsenergylett.1c00190",
+      "title": "What is the Role of Nb in Nickel-Rich Layered Oxide Cathodes for Lithium-Ion Batteries?",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c8ta10329a",
+      "title": "Single-crystal based studies for correlating the properties and high-voltage performance of Li[Ni x Mn y Co 1−x−y ]O 2 cathodes",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsenergylett.9b02147",
+      "title": "Unraveling the Cationic and Anionic Redox Reactions in a Conventional Layered Oxide Cathode",
+      "year": 2019,
+      "relevance": 0.7,
+      "reason": "Ni K-edge XAS on LiNiO2 layered oxide",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1149/2.0071514jes",
+      "title": "Review—Lithium-Excess Layered Cathodes for Lithium Rechargeable Batteries",
+      "year": 2015,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c7ee00827a",
+      "title": "Insights into the structural effects of layered cathode materials for high voltage sodium-ion batteries",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.4c00928",
+      "title": "Stability and Redox Mechanisms of Ni-Rich NMC Cathodes: Insights from First-Principles Many-Body Calculations",
+      "year": 2024,
+      "relevance": 0.4,
+      "reason": "Computational Ni K-edge XAS for Ni-rich NMC",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/s41893-024-01402-x",
+      "title": "Ultrahigh-nickel layered cathode with cycling stability for sustainable lithium-ion batteries",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.8b04673",
+      "title": "Intrinsic Role of Cationic Substitution in Tuning Li/Ni Mixing in High-Ni Layered Oxides",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/nenergy.2015.4",
+      "title": "Metal segregation in hierarchically structured cathode materials for high-energy lithium batteries",
+      "year": 2016,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-021-22635-w",
+      "title": "Hierarchical nickel valence gradient stabilizes high-nickel content layered cathode materials",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.accounts.5b00277",
+      "title": "Review of the U.S. Department of Energy’s “Deep Dive” Effort to Understand Voltage Fade in Li- and Mn-Rich Cathodes",
+      "year": 2015,
+      "relevance": 0.1,
+      "reason": "Review on voltage fade, not specific XAS",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/s41467-020-20169-1",
+      "title": "Pillar-beam structures prevent layered cathode materials from destructive phase transitions",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.9b00227",
+      "title": "What Triggers Oxygen Loss in Oxygen Redox Cathode Materials?",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1557/s43578-026-01938-y",
+      "title": "Experimental and computational structure study of the commercial NMC622 lithium-ion battery electrode.",
+      "year": 2026,
+      "relevance": 1.0,
+      "reason": "TM K-edge XANES/EXAFS on NMC622 cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1039/d6ta01388k",
+      "title": "Improved cycle life and Li-ion transport parameters at low temperature in doped Ni-rich NMC cathodes.",
+      "year": 2026,
+      "relevance": 0.2,
+      "reason": "Doped NMC study, no explicit XAS mentioned",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1002/adma.74126",
+      "title": "Lattice-Electron Synergistic Pinning Strategy for Intensified Regeneration of Spent Ternary Cathodes.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/smll.74662",
+      "title": "Elemental Tuning of NMC Cathode Materials: Atomic Structural Variations Drive Performance Improvements.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.5c01824",
+      "title": "Effect of Annealing on Direct Recycled NMC Cathodes.",
+      "year": 2025,
+      "relevance": 1.0,
+      "reason": "Ni XANES on recycled NMC cathode material",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/photonsci.5c00020",
+      "title": "Statistical White-Line Analysis in High-Throughput TXM-XANES for Chemical State Quantification.",
+      "year": 2026,
+      "relevance": 0.4,
+      "reason": "TXM-XANES method development, not NMC-specific",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/jacs.6c03074",
+      "title": "Evolution of Charge and Orbital Ordering, and Cation Vacancy Ordering During Electrochemical Desodiation of NaxNiO2.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.77138",
+      "title": "TiO6 as a Compensatory Structural Unit in Co-Free, High-Ni Layered Oxide for Durable Lithium-Ion Batteries.",
+      "year": 2026,
+      "relevance": 0.7,
+      "reason": "Ni EXAFS on Co-free layered oxide cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.3390/molecules31173040",
+      "title": "Research Progress on Recycling Technology of Spent Lithium-Ion Battery Electrodes: From the Perspective of Physical Separation and Intelligent Recognition.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1126/sciadv.ady7189",
+      "title": "Unravelling electro-chemo-mechanical interplay in layered oxide cathode degradation in solid-state batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/smll.202512974",
+      "title": "Unlocking Energy Potential: Exploiting Anionic Redox Activity in Na-Based Layered Oxides.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/ma19153280",
+      "title": "Operando-Defined Amorphous Energy Materials for Electrochemical Energy Systems: From Structural Definition to Descriptor-Guided Design.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.202512219",
+      "title": "Reaction Suppression Between a High-Ni Cathode Material (NMC622) and Li7La3Zr2O12 on Co-Sintering for Manufacturing Bulk-Type All-Solid-State Batteries: A New Method and Its Mechanism.",
+      "year": 2025,
+      "relevance": 0.2,
+      "reason": "NMC622/LLZ interface, no XAS indicated",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/s41467-024-55235-5",
+      "title": "Parasitic structure defect blights sustainability of cobalt-free single crystalline cathodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.202417094",
+      "title": "Unraveling Redox Mediator-Assisted Chemical Relithiation Mechanism for Direct Recycling of Spent Ni-Rich Layered Cathode Materials.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d5sc00429b",
+      "title": "Reassessing anionic redox in conventional layered oxide cathodes for Li-ion batteries: ionic and covalent mechanisms.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsenergylett.5c00736",
+      "title": "Ni-Rich Li[Ni x Mn y Co1-x-y ]O2 Single Crystals as Superior Fast Charge Cathodes for Lithium-Ion Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/cssc.70988",
+      "title": "Surface-Enhanced Raman Spectroscopy for Lithium Battery Interfaces.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.5c00485",
+      "title": "Single Crystal Cathode Materials for Lithium-Based Batteries: Synthesis, Scaleup, and Manufacturing.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.5c00772",
+      "title": "Advancing Battery Manufacturing: Synchrotron Characterization for Industry.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/mi17050548",
+      "title": "Advancing Functional Electrocatalysts for Hybrid Water Splitting: Strategies for Energy-Efficient Hydrogen Production.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/smll.202502460",
+      "title": "Operando Measurement of Transition Metal Deposition in a NMC Li-Ion Battery Using Laboratory Confocal Micro-X-ray Fluorescence Spectroscopy.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/cbmi.5c00036",
+      "title": "Multidimensional Tracking and Clustering of Electrochemical Reactions in the Positive Electrode of Lithium-Ion Batteries via Operando X‑ray Nanoscale Chemical Imaging.",
+      "year": 2026,
+      "relevance": 0.3,
+      "reason": "Operando X-ray imaging, not Ni K-edge specific",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1002/advs.202414480",
+      "title": "Operando Synchrotron X-Ray Absorption Spectroscopy: A Key Tool for Cathode Material Studies in Next-Generation Batteries.",
+      "year": 2025,
+      "relevance": 0.4,
+      "reason": "Review of operando XAS for cathode materials",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1002/adma.202419253",
+      "title": "Kinetically Dormant Ni-Rich Layered Cathode During High-Voltage Operation.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "Insights on the role of the covalent Ni-O bonds in LiNiO2 positive electrodes: A combined hard X-ray spectroscopy study",
+      "year": 2025,
+      "relevance": 0.7,
+      "reason": "Hard X-ray spectroscopy on LiNiO2 Ni-O bonds",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1149/2.1151902jes",
+      "title": "Nickel, Manganese, and Cobalt Dissolution from Ni-Rich NMC and Their Effects on NMC622-Graphite Cells",
+      "year": 2019,
+      "relevance": 1.0,
+      "reason": "Operando XAS on Ni-rich NMC622 dissolution",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1002/adma.201806620",
+      "title": "Review of Recent Development of In Situ/Operando Characterization Techniques for Lithium Battery Research",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41427-018-0056-z",
+      "title": "In situ/operando synchrotron-based X-ray techniques for lithium-ion battery research",
+      "year": 2018,
+      "relevance": 0.3,
+      "reason": "General review of in situ X-ray techniques",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/ncomms3568",
+      "title": "Distinct charge dynamics in battery electrodes revealed by in situ and operando soft X-ray spectroscopy",
+      "year": 2013,
+      "relevance": 0.2,
+      "reason": "Soft X-ray spectroscopy of battery cathodes, not Ni K-edge XAS.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.ccr.2020.213466",
+      "title": "Modern X-ray spectroscopy: XAS and XES in the laboratory",
+      "year": 2020,
+      "relevance": 0.1,
+      "reason": "General laboratory XAS/XES review, no Ni K-edge or NMC.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1038/s41467-017-02041-x",
+      "title": "Coupling between oxygen redox and cation migration explains unusual electrochemistry in lithium-rich layered oxides",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41560-022-01020-x",
+      "title": "Additive engineering for robust interphases to stabilize high-Ni layered structures at ultra-high voltage of 4.8 V",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsenergylett.3c01596",
+      "title": "Synergistic Degradation Mechanism in Single Crystal Ni-Rich NMC//Graphite Cells",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-019-13884-x",
+      "title": "Charge distribution guided by grain crystallographic orientations in polycrystalline battery materials",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/ncomms7883",
+      "title": "Visualization of electrochemically driven solid-state phase transformations using operando hard X-ray spectro-imaging",
+      "year": 2015,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.accounts.7b00506",
+      "title": "Probing the Complexities of Structural Changes in Layered Oxide Cathode Materials for Li-Ion Batteries during Fast Charge–Discharge Cycling and Heating",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-017-02291-9",
+      "title": "Fundamental interplay between anionic/cationic redox governing the kinetics and thermodynamics of lithium-rich cathodes",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.trechm.2023.08.002",
+      "title": "Interphasial engineering for Ni-rich NMC cathode materials",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d2sc04397a",
+      "title": "Synchrotron radiation based operando characterization of battery materials",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/srep21479",
+      "title": "Rapid Mapping of Lithiation Dynamics in Transition Metal Oxide Particles with Operando X-ray Absorption Spectroscopy",
+      "year": 2016,
+      "relevance": 0.7,
+      "reason": "Operando XANES of layered LiMO2 cathodes including Ni, closely analogous.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1039/d1cp00359c",
+      "title": "Lithium ion battery degradation: what you need to know",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41563-022-01278-2",
+      "title": "Capturing dynamic ligand-to-metal charge transfer with a long-lived cationic intermediate for anionic redox",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/eem2.12172",
+      "title": "In Situ/Operando (Soft) X‐ray Spectroscopy Study of Beyond Lithium‐ion Batteries",
+      "year": 2021,
+      "relevance": 0.1,
+      "reason": "Soft X-ray spectroscopy of beyond Li-ion batteries, not Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1149/2.1021803jes",
+      "title": "Depth-Dependent Redox Behavior of LiNi0.6Mn0.2Co0.2O2",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.nanoen.2020.105365",
+      "title": "Correlating the phase evolution and anionic redox in Co-Free Ni-Rich layered oxide cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d6eb00072j",
+      "title": "Understanding the reactivity of copper current collectors in lithium batteries - an operando XAS study.",
+      "year": 2026,
+      "relevance": 0.1,
+      "reason": "Cu K-edge XAS of current collectors, wrong element and material.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1126/sciadv.aed1629",
+      "title": "Nonequilibrium ion transport in a hybrid battery material.",
+      "year": 2026,
+      "relevance": 0.1,
+      "reason": "Prussian blue analog battery material, not NMC or Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1002/smsc.70286",
+      "title": "How Surface Reconstruction Drives Heterogeneous Bulk Delithiation in Single-Crystalline Ni-Rich Layered Oxide Cathodes.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41565-026-02189-y",
+      "title": "Direct evidence of metal-ligand redox processes in positive electrodes during lithium-based battery operation.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1557/s43580-025-01397-3",
+      "title": "Operando X-ray Raman Ni 2p spectra of LiNixMnyCo1-x-yO2 lithium-ion battery electrodes.",
+      "year": 2025,
+      "relevance": 0.4,
+      "reason": "NMC material but Ni L-edge/2p, not Ni K-edge XAS.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1039/d6sc06335g",
+      "title": "Elucidating ionic-electronic transport in cation-disordered rocksalt cathodes.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-026-76366-x",
+      "title": "Enhancing the longevity of lithium-manganese-rich layered oxides by promoting oxygen redox reversibility.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d5sc04984a",
+      "title": "Enhanced ion intercalation in Ni x K1-2x TiNbO5 enabled by redox active Ni exchange for potassium-ion batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s40820-025-02014-6",
+      "title": "In situ Studies of Electrochemical Energy Conversion and Storage Technologies: From Materials, Intermediates, and Products to Surroundings.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/cssc.202401796",
+      "title": "Operando Investigation of Zr Doping in NMC811 Cathode for High Energy Density Lithium Ion Batteries.",
+      "year": 2025,
+      "relevance": 0.7,
+      "reason": "NMC811 cathode with ex situ XAS, likely includes Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.5c00330",
+      "title": "Understanding Degradation in Single-Crystalline Ni-Rich Li-Ion Battery Cathodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/jacs.4c08089",
+      "title": "Revealing the Chemical and Structural Complexity of Electrochemical Ion Exchange in Layered Oxide Materials.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-025-61304-0",
+      "title": "Unraveling the origin of air-stability in single-crystalline layered oxide positive electrode materials.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsami.3c15670",
+      "title": "Exploring the Role of an Electrolyte Additive in Suppressing Surface Reconstruction of a Ni-Rich NMC Cathode at Ultrahigh Voltage via Enhanced In Situ and Operando Characterization Methods.",
+      "year": 2024,
+      "relevance": 0.7,
+      "reason": "NMC cathode with operando XAS, likely includes Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.4c00597",
+      "title": "Beam Effects in Synchrotron Radiation Operando Characterization of Battery Materials: X-Ray Diffraction and Absorption Study of LiNi0.33Mn0.33Co0.33O2 and LiFePO4 Electrodes.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.accounts.4c00717",
+      "title": "Elucidating the Origins of High Capacity in Iron-Based Conversion Materials: Benefit of Complementary Advanced Characterization toward Mechanistic Understanding.",
+      "year": 2025,
+      "relevance": 0.1,
+      "reason": "Iron-based conversion materials, not NMC or Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "",
+      "title": "A Novel Electrochemical Flow-Cell for Operando XAS Investigations On X-ray Opaque Supports",
+      "year": 2023,
+      "relevance": 0.2,
+      "reason": "General operando XAS flow cell method, no specific Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1149/2.0021707jes",
+      "title": "Oxygen Release and Its Effect on the Cycling Stability of LiNi x Mn y Co z O 2 (NMC) Cathode Materials for Li-Ion Batteries",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.060208jes",
+      "title": "Electrochemical and Physical Properties of Ti-Substituted Layered Nickel Manganese Cobalt Oxide (NMC) Cathode Materials",
+      "year": 2012,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d2ee03969a",
+      "title": "Constructing “Li-rich Ni-rich” oxide cathodes for high-energy-density Li-ion batteries",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41560-021-00832-7",
+      "title": "Persistent and partially mobile oxygen vacancies in Li-rich layered oxides",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsami.1c22812",
+      "title": "Electrolyte Reactivity at the Charged Ni-Rich Cathode Interface and Degradation in Li-Ion Batteries",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/1945-7111/ab6826",
+      "title": "Revisiting the Mechanism Behind Transition-Metal Dissolution from Delithiated LiNi x Mn y Co z O 2 (NMC) Cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41598-020-75134-1",
+      "title": "Lithium containing layered high entropy oxide structures",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d1ee04053g",
+      "title": "Two electrolyte decomposition pathways at nickel-rich cathode surfaces in lithium-ion batteries",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d1ta01639c",
+      "title": "Stoichiometrically driven disorder and local diffusion in NMC cathodes",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.1001702jes",
+      "title": "The Role of Oxygen Release from Li- and Mn-Rich Layered Oxides during the First Cycles Investigated by On-Line Electrochemical Mass Spectrometry",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d3qi01857a",
+      "title": "The role of niobium in layered oxide cathodes for conventional lithium-ion and solid-state batteries",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.0691811jes",
+      "title": "Oxygen Release and Surface Degradation of Li- and Mn-Rich Layered Oxides in Variation of the Li2MnO3Content",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-020-17126-3",
+      "title": "Highly reversible oxygen redox in layered compounds enabled by surface polyanions",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.ensm.2021.04.035",
+      "title": "Unlocking the self-supported thermal runaway of high-energy lithium-ion batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c8ta02622j",
+      "title": "Transition metal speciation as a degradation mechanism with the formation of a solid-electrolyte interphase (SEI) in Ni-rich transition metal oxide cathodes",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1088/2752-5724/ac8ab9",
+      "title": "P2-type layered high-entropy oxides as sodium-ion cathode materials",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.nanoen.2021.105926",
+      "title": "Selective dopant segregation modulates mesoscale reaction kinetics in layered transition metal oxide",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.jpcc.9b01298",
+      "title": "Distinction between Intrinsic and X-ray-Induced Oxidized Oxygen States in Li-Rich 3d Layered Oxides and LiAlO2",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.0491712jes",
+      "title": "Irreversible Capacity Loss of Li-Ion Batteries Cycled at Low Temperature Due to an Untypical Layer Hindering Li Diffusion into Graphite Electrode",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/1945-7111/ab8fd9",
+      "title": "Review—Materials Science Predictions of Thermal Runaway in Layered Metal-Oxide Cathodes: A Review of Thermodynamics",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/met13122000",
+      "title": "Holistic Investigation of the Inert Thermal Treatment of Industrially Shredded NMC 622 Lithium-Ion Batteries and Its Influence on Selective Lithium Recovery by Water Leaching",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-020-20198-w",
+      "title": "Depth-dependent valence stratification driven by oxygen redox in lithium-rich layered oxide",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d6ra04652e",
+      "title": "Leaching & electrochemical purification of mixed industrial LFP- & NMC type lithium-ion battery waste.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41598-026-55555-0",
+      "title": "Development of complex technology for pyrite-cobalt concentrate processing by sodium carbonate-carbon reductive smelting.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsomega.4c05086",
+      "title": "Leaching Kinetics of Valuable Metals from Calcined Material of Spent Lithium-Ion Batteries.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3389/fpubh.2026.1768652",
+      "title": "Wildland-urban interface co-combustion of biomass, synthetic polymeric materials, and lithium-ion batteries generates a new class of ultrafine soot-metal-PAH hybrid particles.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1080/14686996.2025.2580917",
+      "title": "Unlocking the potential of battery technologies through Time-of-Flight Secondary Ion Mass Spectrometry.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsami.5c11439",
+      "title": "Degradation of LiNi0.5Mn1.5O4 Cathodes in the P111i4FSI Ionic Liquid Electrolyte and Carbonate Electrolytes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.202512947",
+      "title": "Tailoring Oxide/MAX Phase Nanocomposites via Low-Temperature Oxidation for Lithium-Ion Battery Anodes: Peeking Behind the Electrochemical Mechanism via In Situ Investigations.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.joule.2026.102401",
+      "title": "Research toolbox and material design to meet the challenge of rechargeable Ca metal batteries.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/cssc.202501996",
+      "title": "Direct Electrochemical Regeneration of Lithium-Ion Battery Cathode Material through Molecular Wiring.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsomega.4c06636",
+      "title": "Air Storage Impact on Surface Evolution of Stoichiometric and Li-Rich NMC811.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-026-71929-4",
+      "title": "A microbiome catalog of Chinese traditional artisanal cheeses provides insights into functional and microbial diversity.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41598-024-78927-w",
+      "title": "Chemical compatibility at the interface of garnet-type Ga-LLZO solid electrolyte and high-energy Li-rich layered oxide cathode for all-solid-state batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsomega.5c01717",
+      "title": "Effect of Atomic Layer Fluorination on the Structural and Electrochemical Properties of LiNi0.5Mn1.5O4 High Voltage Electrodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s40820-025-01786-1",
+      "title": "Sensors Innovations for Smart Lithium-Based Batteries: Advancements, Opportunities, and Potential Challenges.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d6ra02188c",
+      "title": "Different types of voltametric techniques for selective and sensitive detection of heavy metal ions in wastewater system: a review.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.4c00515",
+      "title": "Elucidating the Impact of Li3InCl6-Coated LiNi0.8Co0.15Al0.05O2 on the Electro-Chemo-Mechanics of Li6PS5Cl-Based Solid-State Batteries.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.analchem.4c02522",
+      "title": "Electronic Chemical Sensors Based on Conductive Framework Materials.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-024-50324-x",
+      "title": "Nondestructive flash cathode recycling.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1103/physrevb.92.115118",
+      "title": "Calibrating transition metal energy levels and oxygen bands in first principles calculations: accurate prediction of redox potentials and charge transfer in lithium transition metal oxides",
+      "year": 2015,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.ensm.2021.02.003",
+      "title": "A perspective on single-crystal layered oxide cathodes for lithium-ion batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsenergylett.0c02487",
+      "title": "Prelithiated Li-Enriched Gradient Interphase toward Practical High-Energy NMC–Silicon Full Cell",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.7b02546",
+      "title": "First-Principles Simulation of the (Li–Ni–Vacancy)O Phase Diagram and Its Relevance for the Surface Phases in Ni-Rich Li-Ion Cathode Materials",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41560-019-0493-0",
+      "title": "Exploring the bottlenecks of anionic redox in Li-rich layered sulfides",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c5cp02943k",
+      "title": "First-charge instabilities of layered-layered lithium-ion-battery materials",
+      "year": 2015,
+      "relevance": 0.7,
+      "reason": "Li-rich layered oxide with Ni, XAS for oxidation states, analogous.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.ensm.2020.08.003",
+      "title": "Unraveling Na and F coupling effects in stabilizing Li, Mn-rich layered oxide cathodes via local ordering modification",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-025-59159-6",
+      "title": "Superexchange interaction regulates Ni/Mn spin states triggering Ni-t2g/O-2p reductive coupling enabling stable lithium-rich cathode",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.joule.2024.10.007",
+      "title": "Metal-ligand redox in layered oxide cathodes for Li-ion batteries",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.002305jes",
+      "title": "Understanding Long-Term Cycling Performance of Li1.2Ni0.15Mn0.55Co0.1O2–Graphite Lithium-Ion Cells",
+      "year": 2013,
+      "relevance": 0.4,
+      "reason": "LMR-NMC material but XAS not explicitly focused on Ni K-edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1038/s41467-021-25686-1",
+      "title": "Reaction inhomogeneity coupling with metal rearrangement triggers electrochemical degradation in lithium-rich layered cathode",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.6b02797",
+      "title": "Identifying the Distribution of Al 3+ in LiNi 0.8 Co 0.15 Al 0.05 O 2",
+      "year": 2016,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c9mh00765b",
+      "title": "Revisiting the charge compensation mechanisms in LiNi 0.8 Co 0.2−y Al y O 2 systems",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.5b00603",
+      "title": "Fundamentals and Catalytic Applications of CeO 2 -Based Materials",
+      "year": 2016,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/nano16171102",
+      "title": "Nanoscale Failure Mechanism and Nanoengineering Modification Strategies of Layered NCM Cathodes.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/adma.73712",
+      "title": "Regulation Roles of p-Block Elements in Lithium Layered Oxide Cathodes: Recent Progress and Perspectives.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.4c01870",
+      "title": "Atomistic Interpretation of the Oxygen K-Edge X-ray Absorption Spectra of Layered Li-Ion Battery Cathode Materials.",
+      "year": 2024,
+      "relevance": 0.2,
+      "reason": "O K-edge spectra of layered cathodes, wrong edge.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1039/d5sc06959a",
+      "title": "Impact of the d0 transition metal on local structural transformations in disordered rock salt cathodes.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "The role of oxygen in automotive grade lithium-ion battery cathodes: an atomistic survey of ageing† † Electronic supplementary information (ESI) available. See DOI: https://doi.org/10.1039/d3ta05516g",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.75065",
+      "title": "Heterointerface‑Enabled Electrocatalysis for Efficient Energy Conversion.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/smll.202504276",
+      "title": "Functional Electrolyte Additives: A Pinch of Salt/Solvent to an Electrolyte for High Energy Density Lithium-Ion and Lithium-Metal Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d5ra07292a",
+      "title": "Exploring the advances in 2D materials as a quest for energy storage electrode materials.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1093/nsr/nwab146",
+      "title": "Structural and chemical evolution in layered oxide cathodes of lithium-ion batteries revealed by synchrotron techniques.",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/exp.20230056",
+      "title": "Recent advances in battery characterization using in situ XAFS, SAXS, XRD, and their combining techniques: From single scale to multiscale structure detection.",
+      "year": 2024,
+      "relevance": 0.2,
+      "reason": "General review of XAFS for batteries, not Ni K-edge specific.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "",
+      "title": "Temperature and high-pressure dependent X-ray absorption of SmNiO3 at the Ni K- and Sm L3- edges",
+      "year": 2015,
+      "relevance": 0.4,
+      "reason": "Ni K-edge XAS on perovskite nickelate reference compound",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/acs.accounts.7b00520",
+      "title": "Electrochemical Characteristics of Layered Transition Metal Oxide Cathode Materials for Lithium Ion Batteries: Surface, Bulk Behavior, and Thermal Properties",
+      "year": 2017,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/ncomms4529",
+      "title": "Surface reconstruction and chemical evolution of stoichiometric layered cathode materials for lithium-ion batteries",
+      "year": 2014,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.0111514jes",
+      "title": "Review—Li-Rich Layered Oxide Cathodes for Next-Generation Li-Ion Batteries: Chances and Challenges",
+      "year": 2015,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41560-021-00782-0",
+      "title": "Reactive boride infusion stabilizes Ni-rich cathodes for lithium-ion batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/jacs.0c02859",
+      "title": "Extended Interfacial Stability through Simple Acid Rinsing in a Li-Rich Oxide Cathode Material",
+      "year": 2020,
+      "relevance": 0.1,
+      "reason": "Li-rich NMC cathode study without X-ray absorption spectroscopy",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/acs.accounts.2c00690",
+      "title": "Layered Oxide Cathodes for Sodium-Ion Batteries: Storage Mechanism, Electrochemistry, and Techno-economics",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c9ee02803j",
+      "title": "Cation-disordered rocksalt transition metal oxides and oxyfluorides for high energy lithium-ion cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.0531614jes",
+      "title": "Editors' Choice—Practical Assessment of Anionic Redox in Li-Rich Layered Oxide Cathodes: A Mixed Blessing for High Energy Li-Ion Batteries",
+      "year": 2016,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/batteries6010008",
+      "title": "Degradation and Aging Routes of Ni-Rich Cathode Based Li-Ion Batteries",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41563-024-01833-z",
+      "title": "Trapped O2 and the origin of voltage fade in layered Li-rich cathodes",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/sym13091628",
+      "title": "Comprehensive Study of Li+/Ni2+ Disorder in Ni-Rich NMCs Cathodes for Li-Ion Batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-021-23154-4",
+      "title": "Covalency does not suppress O2 formation in 4d and 5d Li-rich O-redox cathodes",
+      "year": 2021,
+      "relevance": 0.3,
+      "reason": "RIXS on Li-rich cathodes, not Ni K-edge XAS",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.3390/ijms27156797",
+      "title": "Nanostructured Cathode Materials for Rechargeable Lithium-Ion Batteries: Synthesis, Morphology, and Performances.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/gch2.70100",
+      "title": "Photo-Assisted Charge-Discharge Behavior of NMC622 Cathode.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d5ra03510d",
+      "title": "Enhancement of stability and electronic properties of ultra-high nickel cathodes by aluminium and boron codoping studied by combined density functional theory and neural network models.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.75786",
+      "title": "High Fracture Toughness of 1D Copper-Based MOP Electrode Enables Fast-Charging Lithium-Ion Batteries.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.76305",
+      "title": "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsnano.5c07347",
+      "title": "Insights into Fast-Charge-Induced Cracking and Bulk Structural Deterioration of Ni-Rich Layered Cathodes for Lithium-Ion Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsnano.6c06180",
+      "title": "Targeting 100% Lithium Utilization in Lithium Metal Batteries.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1186/s11671-025-04319-2",
+      "title": "Raman spectroscopy complemented with XRD and TEM for studying structural evolution in initial cycles of LiNi1/3Mn1/3Co1/3O2 cathode material.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/adma.202502766",
+      "title": "Disordered Rocksalts as High-Energy and Earth-Abundant Li-Ion Cathodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d4ra08924c",
+      "title": "Structural changes and mechanisms of reversible electrochemical lithium-ion cycling in (104) oriented LiNi1/3Mn1/3Co1/3O2 thin film cathodes prepared by pulsed laser deposition.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d5ra02943k",
+      "title": "Delithiation effects on the structural, electronic, and electrical properties of LiSr0.8Fe0.1Ni0.1PO4 material.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "Depth-resolving the redox compensation mechanism in LixNiO2",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "A review and outlook on anionic and cationic redox in Ni-, Li- and Mn-rich layered oxides LiMeO2 (Me = Li, Ni, Co, Mn)",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202401413",
+      "title": "A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2",
+      "year": 2024,
+      "relevance": 0.7,
+      "reason": "Correlative spectroscopy on layered Li/Na nickel oxide cathodes",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/acsenergylett.1c02371",
+      "title": "Structure-selective operando x-ray spectroscopy",
+      "year": 2021,
+      "relevance": 0.4,
+      "reason": "Operando X-ray spectroscopy method on Na-ion layered oxides",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1016/j.jpowsour.2015.04.084",
+      "title": "In situ methods for Li-ion battery research: A review of recent developments",
+      "year": 2015,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d0cp01851a",
+      "title": "Exploring cycling induced crystallographic change in NMC with X-ray diffraction computed tomography",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.9b02568",
+      "title": "Framework Doping of Ni Enhances Pseudocapacitive Na-Ion Storage of (Ni)MnO2 Layered Birnessite",
+      "year": 2019,
+      "relevance": 0.7,
+      "reason": "Ni K-edge XANES on layered Ni-doped MnO2 cathode analogue",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/jacs.8b06150",
+      "title": "Cationic Ordering Coupled to Reconstruction of Basic Building Units during Synthesis of High-Ni Layered Oxides",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202202022",
+      "title": "Single‐Crystalline Ni‐Rich LiNi x Mn y Co 1− x − y O 2 Cathode Materials: A Perspective",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1111/jmi.13403",
+      "title": "Hard X-ray spectromicroscopy of Ni-rich cathodes under in situ liquid heating conditions.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "Orbital Signatures of Density Wave Transition in La3Ni2O7-delta and La2PrNi2O7-delta RP-Nickelates Probed via in-situ X-ray Absorption Near-edge Spectroscopy",
+      "year": 2025,
+      "relevance": 0.4,
+      "reason": "Ni K-edge XANES on Ruddlesden-Popper nickelates",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1016/j.ensm.2022.02.025",
+      "title": "Locking oxygen in lattice: A quantifiable comparison of gas generation in polycrystalline and single crystal Ni-rich cathodes",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202102951",
+      "title": "The Importance of Surface Oxygen for Lithiation and Morphology Evolution during Calcination of High‐Nickel NMC Cathodes",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-022-30935-y",
+      "title": "Effect of the grain arrangements on the thermal stability of polycrystalline nickel-rich lithium-based battery cathodes",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d1qm00969a",
+      "title": "Advanced XPS characterization: XPS-based multi-technique analyses for comprehensive understanding of functional materials",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1088/1367-2630/15/10/105011",
+      "title": "Nonlinear thermovoltage and thermocurrent in quantum dots",
+      "year": 2013,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.nanoen.2024.109644",
+      "title": "Understanding improved cycling and thermal stability of compositionally graded Ni-rich layered LiNi0.6Mn0.2Co0.2O2 cathode materials",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.8b04418",
+      "title": "Mesoscale Chemomechanical Interplay of the LiNi 0.8 Co 0.15 Al 0.05 O 2 Cathode in Solid-State Polymer Batteries",
+      "year": 2018,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c4ra13777a",
+      "title": "Graphene and its nanocomposite material based electrochemical sensor platform for dopamine",
+      "year": 2014,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d1gc02693c",
+      "title": "Ultrasound-assisted extraction of metals from Lithium-ion batteries using natural organic acids",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202002719",
+      "title": "Probing Dopant Redistribution, Phase Propagation, and Local Chemical Changes in the Synthesis of Layered Oxide Battery Cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/1945-7111/ab8a9d",
+      "title": "Understanding the Overlithiation Properties of LiNi 0.6 Mn 0.2 Co 0.2 O 2 Using Electrochemistry and Depth-Resolved X-ray Absorption Spectroscopy",
+      "year": 2020,
+      "relevance": 1.0,
+      "reason": "Depth-resolved Ni K-edge XAS on NMC622 layered cathode",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1021/acs.chemmater.9b00772",
+      "title": "Understanding the Low-Voltage Hysteresis of Anionic Redox in Na2Mn3O7",
+      "year": 2019,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.nanoen.2023.109019",
+      "title": "Fast charge induced phase evolution and element contribution of nickel-rich layered cathode for lithium-ion batteries",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acsaem.5c00862",
+      "title": "Influence of Electrolyte Additives on Interfacial Stability of Manganese-Rich Lithium-Ion Battery Cathodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/adma.202412871",
+      "title": "Accelerating the Electrochemical Formation of the δ Phase in Manganese-Rich Rocksalt Cathodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s40820-024-01385-6",
+      "title": "Advances in All-Solid-State Lithium-Sulfur Batteries for Commercialization.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.1c00108",
+      "title": "Artificial Intelligence Applied to Battery Research: Hype or Reality?",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1111/ene.70629",
+      "title": "ePoster.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "UEG Week 2025 Moderated Posters",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s10827-021-00801-9",
+      "title": "30th Annual Computational Neuroscience Meeting: CNS*2021-Meeting Abstracts.",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "Full GSA 2024 Abstract Book PDF",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s10072-020-04753-3",
+      "title": "Abstracts of the 51st Annual Conference of the Italian Society of Neurology : November 28- 30, 2020.",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1103/physrevx.12.011055",
+      "title": "Role of Oxygen States in the Low Valence Nickelate La$_4$Ni$_3$O$_8$",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1103/physreva.96.032504",
+      "title": "Double-Ionization Satellites in the X-ray Emission Spectrum of Ni Metal",
+      "year": 2017,
+      "relevance": 0.1,
+      "reason": "X-ray emission spectroscopy on metallic nickel foil",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.3389/fphy.2021.808683",
+      "title": "Soft X-ray Spectroscopy of Low-Valence Nickelates",
+      "year": 2021,
+      "relevance": 0.1,
+      "reason": "Soft X-ray Ni L-edge on infinite-layer nickelates",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1016/j.commatsci.2021.111028",
+      "title": "Validation of moment tensor potentials for fcc and bcc metals using EXAFS spectra",
+      "year": 2021,
+      "relevance": 0.4,
+      "reason": "EXAFS validation on pure nickel metal reference foil",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1088/2399-6528/ab5fab",
+      "title": "The Prominent Charge-Transfer Effects of Trinuclear Complexes with Nominally High Nickel Valences",
+      "year": 2020,
+      "relevance": 0.1,
+      "reason": "Soft X-ray on molecular Ni complexes, not cathodes",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "",
+      "title": "Local electronic properties of La3Ni2O7 under pressure",
+      "year": 2024,
+      "relevance": 0.4,
+      "reason": "XAS on La3Ni2O7 nickelate under pressure",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1039/d2fd00005a",
+      "title": "Ultrafast manipulation of the NiO antiferromagnetic order via sub-gap optical excitation",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/c6ta07991a",
+      "title": "A review of Ni-based layered oxides for rechargeable Li-ion batteries",
+      "year": 2016,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1016/j.joule.2023.06.017",
+      "title": "Oxygen hole formation controls stability in LiNiO2 cathodes",
+      "year": 2023,
+      "relevance": 0.7,
+      "reason": "Oxygen redox study on layered LiNiO2 cathode analogue",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1002/anie.202012773",
+      "title": "Kinetic Limitations in Single‐Crystal High‐Nickel Cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.1041501jes",
+      "title": "Solid State NMR Studies of Li 2 MnO 3 and Li-Rich Cathode Materials: Proton Insertion, Local Structure, and Voltage Fade",
+      "year": 2014,
+      "relevance": 0.1,
+      "reason": "Solid-state NMR on Li-rich cathodes, not XAS",
+      "screened_by": "nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "doi": "10.1038/s41560-021-00817-6",
+      "title": "Non-topotactic reactions enable high rate capability in Li-rich cathode materials",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/jacs.4c18440",
+      "title": "High-Energy Density Li-Ion Battery Cathode Using Only Industrial Elements.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/anie.202509209",
+      "title": "Deciphering the Role of Fluorination in Dual-Halogen Electrolytes for All-Solid-State Batteries: A Case Study of New Li2HfCl6-xFx Solid Electrolytes.",
+      "year": 2025,
+      "relevance": 0.1,
+      "reason": "Electrolyte study; mentions NMC but no Ni K-edge XAS.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1103/physrevb.74.224425",
+      "title": "Local Atomic Structure of Martensitic Ni$_{2+x}$Mn$_{1-x}$Ga: An EXAFS Study",
+      "year": 2006,
+      "relevance": 0.0,
+      "reason": "Mn and Ga K-edge EXAFS on shape-memory alloy, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "",
+      "title": "Mechanism for modulated structures in Ni-Mn-Ga: An EXAFS Study",
+      "year": 2006,
+      "relevance": 0.0,
+      "reason": "Mn and Ga K-edge EXAFS on Ni-Mn-Ga, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1140/epjb/e2004-00076-2",
+      "title": "Comparison among the local atomic order of amorphous TM-Ti alloys (TM=Co, Ni, Cu) produced by Mechanical Alloying studied by EXAFS",
+      "year": 2004,
+      "relevance": 0.1,
+      "reason": "Ni K-edge EXAFS on amorphous alloys, not layered cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1088/0022-3727/41/4/045004",
+      "title": "Local atomic arrangement and martensitic transformation in Ni$_{50}$Mn$_{35}$In$_{15}$: An EXAFS Study",
+      "year": 2007,
+      "relevance": 0.0,
+      "reason": "Heusler alloy EXAFS, unrelated to cathode materials.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1063/1.3454277",
+      "title": "Correlation between Local Structure Distortions and Martensitic Transformation in Ni-Mn-In alloys",
+      "year": 2010,
+      "relevance": 0.1,
+      "reason": "Ni K-edge EXAFS on Ni-Mn-In alloy, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1088/0953-8984/20/01/015219",
+      "title": "Factors influencing the Martensitic interactions in Ni50Mn35Sn15: An EXAFS study",
+      "year": 2007,
+      "relevance": 0.1,
+      "reason": "Ni K-edge EXAFS on shape-memory alloy, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1103/physrevb.79.064521",
+      "title": "Local Lattice Instability and Superconductivity in La$_{1.85}$Sr$_{0.15}$Cu$_{1-x}$M$_x$O$_4$ (M=Mn, Ni, and Co)",
+      "year": 2009,
+      "relevance": 0.1,
+      "reason": "Ni K-edge EXAFS on cuprate superconductor, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1063/1.3260222",
+      "title": "Charge order, dielectric response and local structure of La5/3Sr1/3NiO4 system",
+      "year": 2009,
+      "relevance": 0.2,
+      "reason": "Ni K-edge EXAFS on layered nickelate, not NMC cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.tsf.2022.139544",
+      "title": "Evolution of local atomic structure accompanying devitrification of amorphous Ni-Zr alloy thin films",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "Ni-Zr metallic glass devitrification, unrelated to cathodes.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1134/s106378341708025x",
+      "title": "An experimental and theoretical study of Ni impurity centers in Ba$_{0.8}$Sr$_{0.2}$TiO$_3$",
+      "year": 2017,
+      "relevance": 0.1,
+      "reason": "Ni K-edge XAFS on perovskite impurity, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1063/1.4901469",
+      "title": "Ferromagnetic interactions and martensitic transformation in Fe doped Ni-Mn-In shape memory alloys",
+      "year": 2014,
+      "relevance": 0.0,
+      "reason": "Fe-doped Ni-Mn-In shape memory alloy, not cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.actamat.2021.117171",
+      "title": "Evidence of nickel ions dimerization in NiWO$_4$ and NiWO$_4$-ZnWO$_4$ solid solutions probed by EXAFS spectroscopy and reverse Monte Carlo simulations",
+      "year": 2021,
+      "relevance": 0.1,
+      "reason": "Ni K-edge EXAFS on wolframite, not layered cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1021/jacs.6c00210",
+      "title": "Plasma engineered Hydroxyl Defects in NiO a DFTSupported-Spectroscopic Analysis of Oxygen Hole States and Implications for Water Oxidation",
+      "year": 2025,
+      "relevance": 0.1,
+      "reason": "NiO OER catalyst study, not NMC layered cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.est.2023.108875",
+      "title": "A review of the degradation mechanisms of NCM cathodes and corresponding mitigation strategies",
+      "year": 2023,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d1ra08401a",
+      "title": "Identifying surface degradation, mechanical failure, and thermal instability phenomena of high energy density Ni-rich NCM cathode materials for lithium-ion batteries: a review",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-020-16233-5",
+      "title": "Machine-learning-revealed statistics of the particle-carbon/binder detachment in lithium-ion battery cathodes",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.3390/ijms262411879",
+      "title": "Raman and Infrared Spectroscopy of Materials for Lithium-Ion Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1021/acs.chemrev.4c00584",
+      "title": "Characterizing Electrode Materials and Interfaces in Solid-State Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/advs.202517032",
+      "title": "Review on Cathode-Electrolyte Interphase for Stabilizing Interfaces in Solid-State Lithium Batteries.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1007/s40820-026-02119-6",
+      "title": "Electrolyte Evolution: A Roadmap from Solvation Structure to Next-Generation Batteries.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1039/d4cp01766h",
+      "title": "Vibrationally-resolved RIXS reveals OH-group formation in oxygen redox active Li-ion battery cathodes.",
+      "year": 2024,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "Anomalous Power Factor Enhancement and Local Structural Transition in Ni-Doped TiCoSb",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "Ti and Co K-edge XAS on thermoelectric, not Ni K-edge cathode.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "",
+      "title": "Evolution of Electronic Structure Across the Rare-Earth RNiO$_3$ Series",
+      "year": 2015,
+      "relevance": 0.4,
+      "reason": "Ni K-edge study but perovskite nickelates, not layered NMC cathodes.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.3390/nano10081606",
+      "title": "Sulfide and Oxide Inorganic Solid Electrolytes for All-Solid-State Li Batteries: A Review",
+      "year": 2020,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41524-018-0067-x",
+      "title": "Automated generation and ensemble-learned matching of X-ray absorption spectra",
+      "year": 2018,
+      "relevance": 0.2,
+      "reason": "General XAS database method, not Ni K-edge or NMC specific.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1021/acsnano.2c04959",
+      "title": "Conformal PEDOT Coating Enables Ultra-High-Voltage and High-Temperature Operation for Single-Crystal Ni-Rich Cathodes",
+      "year": 2022,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1149/2.049403jes",
+      "title": "Quantifying Hysteresis and Voltage Fade in xLi2MnO3●(1-x)LiMn0.5Ni0.5O2Electrodes as a Function of Li2MnO3Content",
+      "year": 2013,
+      "relevance": 0.2,
+      "reason": "Layered Ni-containing cathode but no XAS mentioned in abstract.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1002/aenm.202400190",
+      "title": "Unravelling the Mechanism of Pulse Current Charging for Enhancing the Stability of Commercial LiNi0.5Mn0.3Co0.2O2/Graphite Lithium‐Ion Batteries",
+      "year": 2024,
+      "relevance": 1.0,
+      "reason": "Operando XAS on NMC532 layered cathode, directly target corpus.",
+      "screened_by": "z-ai/glm-5.2:free"
+    },
+    {
+      "doi": "10.1016/j.electacta.2021.138929",
+      "title": "Roles of Mn and Co in Ni-rich layered oxide cathodes synthesized utilizing a Taylor Vortex Reactor",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/aenm.202100210",
+      "title": "Deciphering Interfacial Chemical and Electrochemical Reactions of Sulfide‐Based All‐Solid‐State Batteries",
+      "year": 2021,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1038/s41467-025-56075-7",
+      "title": "Thermal processing to modulate surface chemistry and bulk charge distribution in nickel-rich layered lithium positive electrodes.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1126/sciadv.aec8743",
+      "title": "Solar-mechanical H2O2 production powered by defect dipole polarization in a nonpolar semiconductor.",
+      "year": 2026,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "10.1002/smsc.202500449",
+      "title": "Advancements in Single-Atom Catalysts: Synthesis, Characterization, and Applications in Sensing Technologies.",
+      "year": 2025,
+      "relevance": 0.0,
+      "reason": "heuristic rule",
+      "screened_by": "heuristic"
+    },
+    {
+      "doi": "",
+      "title": "XANES analysis of structural changes in a transient photoexcited state of metalloporphyrin",
+      "year": 2008,
+      "relevance": 0.4,
+      "reason": "Ni K-edge XANES but metalloporphyrin complex, not cathode material.",
+      "screened_by": "z-ai/glm-5.2:free"
+    }
+  ],
+  "errors": []
+}

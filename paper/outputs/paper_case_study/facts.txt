@@ -1,0 +1,14 @@
+QUANTITATIVE RESULTS (from the XAScribe regression layer; these are the only numbers you may use):
+Model: two neural-network regressors on cumulative-distribution (CDF) features of Ni K-edge spectra, trained on DFT spectra of NMC cathodes (held-out R^2 = 0.981 for Ni oxidation state and 0.986 for Ni-O bond length on computed spectra).
+Valence calibration: the oxidation-state scale was aligned with a single reference, x = 1.00, 3.27 V, whose Ni valence is known to be 2.67; the same constant offset was applied to every spectrum. Bond lengths were not adjusted.
+Per-spectrum predictions (uncertainty = missing-data reconstruction and energy-registration sensitivity):
+  x = 1.00, 3.27 V: Ni oxidation state 2.67 (calibration reference); Ni-O bond length 1.977 +/- 0.001 A
+  x = 0.85, 3.73 V: Ni oxidation state 2.95 +/- 0.08; Ni-O bond length 1.965 +/- 0.003 A
+  x = 0.70, 3.76 V: Ni oxidation state 3.15 +/- 0.07; Ni-O bond length 1.932 +/- 0.006 A
+  x = 0.50, 3.92 V: Ni oxidation state 3.44 +/- 0.05; Ni-O bond length 1.918 +/- 0.007 A
+  x = 0.41, 4.08 V: Ni oxidation state 3.54 +/- 0.05; Ni-O bond length 1.910 +/- 0.006 A
+  x = 0.31, 4.26 V: Ni oxidation state 3.76 +/- 0.07; Ni-O bond length 1.896 +/- 0.004 A
+Trend analysis (computed by the quantitative layer): the predicted Ni oxidation state changes monotonically with Li content, by +1.09 from x = 1.00 to x = 0.31 (least-squares slope -1.50 valence units per unit x); the predicted Ni-O bond length changes monotonically by -0.081 A.
+Measured spectral changes from x = 1.00 to x = 0.31: rising-edge half-height +1.97 eV, white-line maximum +2.83 eV, white-line height change +0.003.
+Attribution of the predicted change at x = 0.31 relative to the reference spectrum (integrated gradients, energy regions): oxidation-state change = edge onset -0.06, rising edge +0.55, white line +0.26, post-edge +0.34; Ni-O change = edge onset +0.003 A, rising edge -0.046 A, white line -0.011 A, post-edge -0.027 A.
+Attribution across the training spectra (mean |attribution| share): oxidation-state model - edge onset 1%, rising edge 13%, white line 4%, post-edge 82%; bond-length model - edge onset 2%, rising edge 18%, white line 4%, post-edge 75%.

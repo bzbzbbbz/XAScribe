@@ -101,7 +101,7 @@ def facts_block(a, dataset_shares=None, model_summary=None):
         L.append("No reference spectrum was supplied: oxidation states are on the uncalibrated model scale (relative trends only).")
     L.append("Per-spectrum predictions (uncertainty = missing-data reconstruction and energy-registration sensitivity):")
     for k, n in enumerate(a["names"]):
-        lab = f"x = {a['x'][k]:.2f} ({n})" if "x" in a else n
+        lab = (n if n.startswith("x =") else f"x = {a['x'][k]:.2f} ({n})") if "x" in a else n
         ox = (f"{a['oxidation'][k]:.2f} (calibration reference)" if a["calibrated"] and k == a["reference_index"]
               else f"{a['oxidation'][k]:.2f} +/- {a['oxidation_sd'][k]:.2f}")
         L.append(f"  {lab}: Ni oxidation state {ox}; Ni-O bond length {a['bond_A'][k]:.3f} +/- {a['bond_sd_A'][k]:.3f} A")
@@ -180,15 +180,37 @@ def numeric_check(paragraph, facts):
     return dict(n_numbers=len(found), not_in_facts=sorted(set(missing)))
 
 
-def audit(paragraph, prompt, temperature=0.0):
+def _last_json_array(text):
+    """Return the last parseable top-level JSON array of objects in `text` (reasoning models may think aloud first)."""
+    if not text:
+        return None
+    text = re.sub(r"```(?:json)?", "", text)
+    for end in reversed([i for i, ch in enumerate(text) if ch == "]"]):
+        depth = 0
+        for start in range(end, -1, -1):
+            depth += text[start] == "]"
+            depth -= text[start] == "["
+            if depth == 0:
+                try:
+                    got = json.loads(text[start:end + 1])
+                except ValueError:
+                    break
+                if isinstance(got, list) and got and isinstance(got[0], dict):
+                    return got
+                break
+    return None
+
+
+def audit(paragraph, prompt, temperature=0.0, max_tokens=16000):
     """LLM claim audit (run with a different model from the generator if possible)."""
     q = ("Audit the generated paragraph against the prompt it was written from. Split it into atomic claims. For each claim "
          "give: claim (<=25 words), type (numeric | literature | interpretive), verdict (numeric: exact | wrong; literature: "
          "supported | partial | unsupported | miscited; interpretive: sound | overreaching), and evidence (<=30 words, quote the "
          "supporting passage or facts line). Be strict: a statement about one composition supported only by a passage about "
-         "another is 'partial'. Return ONLY a JSON array.\n\n=== PROMPT ===\n" + prompt + "\n\n=== GENERATED PARAGRAPH ===\n" + paragraph)
-    text, m = llm.chat(q, system="You are a strict scientific fact-checker.", temperature=temperature, max_tokens=4000)
-    claims = parse_json(text)
+         "another is 'partial'. Output ONLY the JSON array (no reasoning, no prose, no code fences).\n\n=== PROMPT ===\n" + prompt + "\n\n=== GENERATED PARAGRAPH ===\n" + paragraph)
+    text, m = llm.chat(q, system="You are a strict scientific fact-checker. Reply with a JSON array only.",
+                       temperature=temperature, max_tokens=max_tokens)
+    claims = _last_json_array(text) or parse_json(text)
     return (claims if isinstance(claims, list) else []), m, text
 
 

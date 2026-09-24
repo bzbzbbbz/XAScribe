@@ -1,0 +1,191 @@
+You are a spectroscopist drafting the Results paragraph of a manuscript.
+
+EXPERIMENT DESCRIPTION: Six Ni K-edge XANES spectra of a LiNi0.6Mn0.2Co0.2O2 (NMC622) cathode recorded operando during the first charge of a pouch cell, from the pristine state (x = 1.00 in LixNi0.6Mn0.2Co0.2O2, 3.27 V) to x = 0.31 (4.26 V).
+
+QUANTITATIVE RESULTS (from the XAScribe regression layer; these are the only numbers you may use):
+Model: two neural-network regressors on cumulative-distribution (CDF) features of Ni K-edge spectra, trained on DFT spectra of NMC cathodes (held-out R^2 = 0.981 for Ni oxidation state and 0.986 for Ni-O bond length on computed spectra).
+Valence calibration: the oxidation-state scale was aligned with a single reference, x = 1.00, 3.27 V, whose Ni valence is known to be 2.67; the same constant offset was applied to every spectrum. Bond lengths were not adjusted.
+Per-spectrum predictions (uncertainty = missing-data reconstruction and energy-registration sensitivity):
+  x = 1.00, 3.27 V: Ni oxidation state 2.67 (calibration reference); Ni-O bond length 1.977 +/- 0.001 A
+  x = 0.85, 3.73 V: Ni oxidation state 2.95 +/- 0.08; Ni-O bond length 1.965 +/- 0.003 A
+  x = 0.70, 3.76 V: Ni oxidation state 3.15 +/- 0.07; Ni-O bond length 1.932 +/- 0.006 A
+  x = 0.50, 3.92 V: Ni oxidation state 3.44 +/- 0.05; Ni-O bond length 1.918 +/- 0.007 A
+  x = 0.41, 4.08 V: Ni oxidation state 3.54 +/- 0.05; Ni-O bond length 1.910 +/- 0.006 A
+  x = 0.31, 4.26 V: Ni oxidation state 3.76 +/- 0.07; Ni-O bond length 1.896 +/- 0.004 A
+Trend analysis (computed by the quantitative layer): the predicted Ni oxidation state changes monotonically with Li content, by +1.09 from x = 1.00 to x = 0.31 (least-squares slope -1.50 valence units per unit x); the predicted Ni-O bond length changes monotonically by -0.081 A.
+Measured spectral changes from x = 1.00 to x = 0.31: rising-edge half-height +1.97 eV, white-line maximum +2.83 eV, white-line height change +0.003.
+Attribution of the predicted change at x = 0.31 relative to the reference spectrum (integrated gradients, energy regions): oxidation-state change = edge onset -0.06, rising edge +0.55, white line +0.26, post-edge +0.34; Ni-O change = edge onset +0.003 A, rising edge -0.046 A, white line -0.011 A, post-edge -0.027 A.
+Attribution across the training spectra (mean |attribution| share): oxidation-state model - edge onset 1%, rising edge 13%, white line 4%, post-edge 82%; bond-length model - edge onset 2%, rising edge 18%, white line 4%, post-edge 75%.
+
+RETRIEVED LITERATURE PASSAGES (each tagged with a numbered source; cite with the bracketed number):
+[1] (similarity 0.91) upporting the general trend observed by both XRD and EXAFS 
+(Figure 3).[13] A summary of the EXAFS results is shown in Table S3.
+3.2 The charge compensation mechanism in LiNiO2 and effect of covalency Figure 4. a) Ni K-edge XANES spectra of the pristine and the electrochemically deintercalated LNO 
+electrodes, highlighting the evolution of b) the main peak, c) the edge position, and d) the pre-edge 
+region; e) the correlation between the Ni—O average bond distances from EXAFS and the pre-edge 
+peak position.
+The evolution of the bulk oxidation state of Ni was followed by analyzing the ex situ Ni K-edge XANES 
+spectra of the pristine and cycled LNO samples (Figure 4a). A gradual continuous shift of the main peak 
+as well as the rising edge position towards higher energy (from 8347.5 eV to about 8348.2 eV at J = 
+0.8) are observed along the series, indicating the increasing oxidation of Ni upon Li+ ion deintercalation. 
+However, at cut-off voltages of 4.03 and 4.13 V (samples X3/X4), a break in the trend is observed 
+(Figure 4b). Moreover, at the highest cutoff voltage of 4.30 V (sample X5), a different slope of the
+[2] (similarity 0.90)  state 
+of ∼ +2 in all three materials, LiNiO2, NiO2, and NiO, while the charge of O is ca. −1.5 
+in LiNiO2, −1 in NiO2, and assumes its most stable state of −2 only in the 
+decomposition product NiO. A standard experimental procedure to track oxidation state changes in battery 
+materials is X-ray absorption spectroscopy (XAS). To validate the computed charge 
+states and directly compare our predictions with experiment, we calculated Ni K and 
+O K spectra for LNO and NiO2 (see Fig. 2 a+b) and compared them with experimental 
+Ni K and O K X-ray spectra of a 2% W-doped LNO cathode at varying states of 
+delithiation (see Fig. 2 c+d).17 The spectra were collected in the bulk-sensitive 
+fluorescent yield mode. 
+Fig. 2a shows a clear shift of the edge position in the calculated Ni K spectra – with 
+the calculations yielding a Ni charge state of +2 both in LNO and NiO2. The 
+magnitude of the shift is in excellent agreement with the edge shift observed in 
+experiment (see Fig. 2c). While our DFT calculations find the Ni charge to remain +2, 
+they predict that the local Ni-O bonding environment changes on delithiation (see 
+Fig. 2e). In line with previous computations5,44 and EXAFS results45
+[3] (similarity 0.90)  Mn 4+ (MnO, Mn 3 O 4 , Mn 2 O 3 , MnO 2 , and quaternary Ferrite samples Co-Zn-Mn 4+ [X2] are shown for comparison.
+Comparison of experimental and calculated XANES at K-edges of (a) Ni (b) Mn (c) Co. Change of the charge-transfer resistance R during change of voltage, obtained from RCT from quantitative impedance analysis.
+The average valence state of Ni cations in NMC622 pristine material is estimated from the Ni K-edge energy position (Fig.  4 ). Comparison with Ni K-edge XANES spectra of the reference compounds (crystalline NiO with octahedrally coordinated Ni 2+ cations, and crystalline Li 1.4 NiTiO 4 cathode material for Li-Ion battery with 40% Ni 2+ and 60% Ni 3+ cations with octahedral oxygen coordination [ 39 ]) shows that the energy of the Ni K-edge is shifted to higher energies by approximately 1.5 eV between Ni 2+ and Ni 3+ valence state Refs. [ 39 , 40 ]. The Ni K-edge energy position of NMC622 pristine sample indicates that the sample contains the Ni predominantly as Ni 3+ cations with an average Ni valence of 3.0 ± 0.2. The results of the Ni XANES results reported for the NMC622 fresh material in Ref. [ 40 ] indicate average Ni valence in fresh material to be 2.7 + .
+[4] (similarity 0.89) features 3.4(6)% Ni in the Li layered and 96.5(6)% Ni in the 
+Ni layer. 
+Operando XAS at Ni K-edge is a suitable tool to acquire bulk information on the Ni local environment 
+and oxidation state upon  features 3.4(6)% Ni in the Li layered and 96.5(6)% Ni in the 
+Ni layer. 
+Operando XAS at Ni K-edge is a suitable tool to acquire bulk information on the Ni local environment 
+and oxidation state upon cycling. The LNO electrode was cycled using a homemade electrochemical 
+cell equipped with X-ray transparent Be windows, showing performance comparable to coin cells and 
+described elsewhere. The possible occurrence of beam damage was assessed by measuring different 
+positions at specific state of charges during cycling. The edge position of the operando XANES spectra 
+(Figure 2a) shows a progressively shift of the edge position towards higher energies upon charge, in 
+agreement with previous studies. This blue shift is usually interpreted in terms of Ni4+/Ni3+ redox 
+activity 21. It is important to recall that, while the edge position is often used to determine the formal 
+oxidation state of the Ni ions, this assumption implies a fully ionic character of the Ni-O bonds, which 
+is not accu
+[2] (similarity 0.88) f LiNiO2, NiO2, and hydrated NiO2. c, experimental Ni K-edge spectra of LiNi0.98W0.02O2 at OCV 
+and charged to 4.7 V. d, experimental O K-edge spectra of LiNi0.98W0.02O2 at OCV and 4.7 V. The asterisk 8 
+denotes a signal arising at 531 eV at high states of charge, conventionally assigned to lattice O redox. The 
+peak at 534 eV in the OCV data stems from surface carbonate species. c+d adapted from Menon et al.17 
+e, loss of Jahn-Teller distortions and decrease of the mean Ni-O bond length of LNO on delithiation. 
+f, water-assisted formation of O-O dimers, as obtained from AIMD simulations at different timesteps. The 
+snapshot at 377 fs was used for the prediction of the XAS spectrum of hydrated NiO2 in b.
+[3] (similarity 0.87) nments of the metal cation result in different K-edge profiles in the XANES spectra, and the K-edge energy position is correlated with the valence state of the metal cations in the sample [ 38 – 41 ]. Experimental transition metal K-edge XANES spectra of NMC622. (a) Ni K-edge, normalized Ni K-edge XANES spectra measured on NMC622 pristine sample at ESRF. The spectrum of crystalline NiO, as a reference for Ni 2+ , and Li 1.4 NiTiO 4 cathode material, as reference for Ni 2.6+ , are shown for comparison. (b) Co K-edge, normalized Co K-edge XANES spectra measured on NMC622 pristine sample. The spectrum of crystalline CoFe 2 O 4 , as a reference for Co 2+ , and Co 3 O 4 , as reference for Co 2.7+ , are shown for comparison. (c) Mn K-edge, normalized Mn K-edge XANES spectra measured on NMC622 pristine sample. Spectra of reference Mn compounds with different Mn valence states between Mn 2+ and Mn 4+ (MnO, Mn 3 O 4 , Mn 2 O 3 , MnO 2 , and quaternary Ferrite samples Co-Zn-Mn 4+ [X2] are shown for comparison.
+Comparison of experimental and calculated XANES at K-edges of (a) Ni (b) Mn (c) Co.
+[1] (similarity 0.87) 
+However, at cut-off voltages of 4.03 and 4.13 V (samples X3/X4), a break in the trend is observed 
+(Figure 4b). Moreover, at the highest cutoff voltage of 4.30 V (sample X5), a different slope of the rising edge is observed (Figure 4c), indicating a more complex relationship between the rising edge 
+position and the Ni oxidation state. Indeed, it is important to recall that the XANES features do not 
+solely reflect the density of unoccupied states above the Fermi level, but they also depend on the local 
+orbital rearrangement. 
+Meanwhile, the pre-edge intensity slightly increases and shifts to higher energy upon Li+ ion extraction 
+(Figure 4d). An increasing pre-edge intensity is expected due to the removal of electrons from nickel 
+3d orbitals. In addition, the increased hybridization may be directly correlated to the increasing covalent 
+framework consequent to the shortening of the Ni―O bond distances, resulting in a mild overlap 
+between orbitals especially when local distortions are expected (e.g., for the M phase more than for H 
+phase). Subsequently, the observed pre-edge features support the increase in Ni oxidation state because 
+of these local structural and electronic ch
+[1] (similarity 0.87) ly delithiated LNO positive 
+electrodes, highlighting b) the CtC Kβ1,3 region and c) the CtC Kβ’ region. Reference materials, NiO 
+(Ni2+: d8) and NaNiO2 (Ni3+: d7), are included for better comparison. While the Ni K-edge XANES energy position in the series of samples obtained upon Li+ ion 
+deintercalation generally evolves continuously with the expected oxidation of Ni, a more complex 
+evolution is observed depending on the feature being examined, which may be likely connected to the 
+increased covalency of Ni―O bonds. Thus, the rising edge position alone may not be sufficient to 
+accurately determine the oxidation state of Ni, as it can be influenced by the nature of the Ni―O bonds. 
+[23] To address this, Ni CtC and VtC Kβ XES was used as a complementary technique (Figure 5a). In 
+fact, the Ni CtC Kβ XES line (8225 eV – 8300 eV) results from the specific electronic relaxation process 
+corresponding to 3p → 1s transition filling the Ni core-hole. The main emission line, corresponding to 
+the CtC Kβ1,3 region, is highly sensitive to the electronic environment, particularly the valence electrons, 
+due to the strong 3p―3d exchange interaction, and is expected to provide insights on the
+[1] (similarity 0.87) nt and the 
+charge compensation process upon Li+ ion extraction. [21]
+Figure 7. a) Ni L2,3-edges and b) O K-edge XRS spectra of the pristine and electrochemically delithiated 
+LNO positive electrodes. The question now centers on understanding the relationship between Ni and O in LNO, considering 
+both their oxidation states as Li+ ions are extracted. In this line, it is essential to extract direct 
+information on the Ni 3d-O 2p electronic interaction. For this purpose, Ni L2,3-edges XRS and the O Kedge XRS spectra were collected on the same series of electrochemically delithiated LNO electrodes 
+(Figure 7a and Figure 7b). 
+The oxidation state of Ni can be assessed by looking into the Ni L2,3-edges XRS, corresponding to the 
+dipole electronic transition from the occupied Ni 2p to the unoccupied Ni 3d states. Overall 
+characteristic features including a double peak at lower energies, at ~853.7 eV (Peak A) and at ~855.4 
+eV (Peak B), and another feature at higher energies at ~872.5 eV (Peak C) are consistent with Ni L2,3edges spectra obtained from soft-XAS in previous studies. [27,28] Specifically, the former is assigned 
+to the Ni L3-edge (Peak A and B: 2p3/2 → 3d), while the latter i
+[1] (similarity 0.87) edge X-ray absorption near-edge structure (XANES) and non-resonant Ni Kβ X-ray emission 
+spectroscopy (XES) spectra are combined to track the electronic environment of Ni. X-ray Raman 
+scattering (XRS edge X-ray absorption near-edge structure (XANES) and non-resonant Ni Kβ X-ray emission 
+spectroscopy (XES) spectra are combined to track the electronic environment of Ni. X-ray Raman 
+scattering (XRS) spectra at the Ni L2,3-edges and O K-edge provide direct bulk electronic information 
+with regards to the interplay between Ni 3d and O 2p states. The overall findings imply that O plays a 
+significant role in the charge compensation process, contributing to the substantial negative charge 
+transfer from the O 2p orbitals, because of the covalency in the Ni—O bonds inside the NiO2 framework 
+within the edge-sharing NiO6 octahedra. The utilization of complementary X-ray spectroscopy 
+techniques clarifies the intricate electronic environment of LNO, which is helpful in understanding Nirich positive electrode materials and offering new insights into their covalent nature.
+1 Introduction
+[1] (similarity 0.87) re expected (e.g., for the M phase more than for H 
+phase). Subsequently, the observed pre-edge features support the increase in Ni oxidation state because 
+of these local structural and electronic ch re expected (e.g., for the M phase more than for H 
+phase). Subsequently, the observed pre-edge features support the increase in Ni oxidation state because 
+of these local structural and electronic changes. A strong correlation is evident in Figure 4e between the 
+pre-edge peak position and the Ni―O bond distances from EXAFS analysis as a function of the 
+expected Li+ ion composition. [6,25,50,52]
+Figure 5. a) Ni Kβ X-ray emission lines of the pristine and electrochemically delithiated LNO positive 
+electrodes, highlighting b) the CtC Kβ1,3 region and c) the CtC Kβ’ region. Reference materials, NiO 
+(Ni2+: d8) and NaNiO2 (Ni3+: d7), are included for better comparison.
+[4] (similarity 0.87) tively)49, and their relative intensity depends on the Li content, in agreement with previous 
+reports 50. Significantly different is the shape of the Ni XRS spectra obtained at high q value, where
+10 peak A is strongly damped in the charged LNO. The same shape is observed for Ni XRS spectra at low 
+q value, thus in a pure dipole approximation, confirming the robustness of our results in both pristine 
+and charged state (Figure S7, S8). Looking at the O XRS spectra, the pre-edge intensity is observed to 
+increase during delithiation, while the main edge shifts to higher energy. A similar trend is observed 
+in O K-edge sXAS50, while the XRS pre-peak intensity is doubled in the charged LNO electrode 
+compared to the pristine one. Overall, while the observed spectral features are generally consistent 
+with the literature, two major differences should be highlighted for charged LNO: i) the peak A is 
+strongly attenuated in the Ni L3-edge spectra, and ii) the large increase of the pre-edge intensity at 
+the O K-edge. 
+Seeking to assess the electronic bulk structure of LNO, we compared the experimental XRS spectra at 
+Ni L3-edge and O K-edge with calculations performed using Hilbert++ and
+[4] (similarity 0.86) tu XRS
+Figure S7: XRS spectra obtained at Ni L2,3-edge in the charged LNO electrode at low and 
+high q.
+Figure S8: XRS spectra obtained at Ni L2,3-edge in the pristine LNO electrode at different q.
+32 Discussion on Ni K-edge XANES simulations 
+The final Ni K-edge XANES spectra (Fig.2, main paper) are computed with the 
+XSpectra module [Calandra2009, Bunǎu2013] of the Quantum ESPRESSO package 
+[Gianozzi2020, Gianozzi2017, Gianozzi2009]. The spectra are obtained by applying the 
+Lanczos algorithm, with a minimal 0.5 eV constant Lorentzian broadening (subplot C, Fig. S9). 
+Variable-energy broadening, using the approach outlined by Bunǎu and Calandra 
+[Bunǎu2013] and based on the Seah-Dench formalism for the inelastic mean-free-path 
+[Seah1979], is then applied as a post-processing to include lifetime effects and ease the 
+comparison to experiments. For the representation of pristine LiNiO2 we considered both 
+the 100% JT (P21/c) and 100% BD (P2/c) models as well as intermediate compositions, 
+proposed as being almost energetically degenerate with the established JT structure 
+[Foyevtsova2019]. We find in this instance that the Ni K-edge spectra are nearly identical 
+when lifetime effec
+[3] (similarity 0.86) s were performed using standard-derived instrument parameter files. Where relevant (XMaS), standard-based corrections were applied to remove systematic peak-position offsets caused by sample movement. Ni, Co, and Mn K-edge X-ray absorption near-edge structure (XANES) and extended X-ray absorption fine structure (EXAFS) measurements were performed on pristine NMC622 cathode material at the Soleil Synchrotron on the Samba beamline [ 30 ]. Measurements were conducted at room temperature in transmission mode. The investigated material was LiNi 0.6 Mn 0.2 Co 0.2 O 2 , processed into composite electrodes containing polyvinylidene difluoride (PVDF) binder and carbon black as conductive additive and coated onto 15 μm aluminum foil. The electrode thickness was adjusted to provide an optimal X-ray absorption step of approximately 1.5 at the respective absorption edges. Energy calibration was performed using simultaneous transmission measurements of Ni, Co, and Mn metal reference foils. Quantitative analysis of XANES and EXAFS spectra was carried out using the Demeter (IFEFFIT) software package (compare [ 31 ]).
+[1] (similarity 0.86) eil.fr, laurence.croguennec@icmcb.cnrs.fr
+Keywords: Li-ion batteries, lithium nickel oxide, layered oxides, X-ray absorption spectroscopy, X-ray 
+emission spectroscopy, X-ray Raman scattering
+ABSTRACT The interest in Ni-rich layered oxide positive electrode materials has been increasing due to its wide 
+applicability particularly in electric vehicles as high capacity and high energy density electrode 
+materials. However, the Ni—O bond array which builds the overall framework and plays a critical role 
+in the charge compensation mechanism of the material requires deeper understanding. This work 
+presents a correlative approach elucidating the role of the local highly covalent Ni—O bonds in LiNiO2 
+(LNO) model material. Pristine and electrochemically obtained LNO positive electrodes are analyzed 
+using ex situ X-ray diffraction (XRD) and extended X-ray absorption fine structure (EXAFS) to 
+compare the average and local structural evolution upon Li+ ion de-intercalation. Insights from Ni Kedge X-ray absorption near-edge structure (XANES) and non-resonant Ni Kβ X-ray emission 
+spectroscopy (XES) spectra are combined to track the electronic environment of Ni. X-ray Raman 
+scattering (XRS
+
+SOURCE LIST:
+[1] J. J. H. Togonon, J.-N. Chotard, A. Longo, L. Stievano, L. Croguennec and A. Iadecola, Insights on the role of the covalent Ni-O bonds in LiNiO2 positive electrodes: A combined hard X-ray spectroscopy study, arXiv preprint, 2025, arXiv:2503.22383.
+[2] A. R. Genreith‐Schriever, H. Banerjee, A. S. Menon, E. N. Bassey, L. F. J. Piper, C. P. Grey et al., Oxygen hole formation controls stability in LiNiO2 cathodes, Joule, 2023, 7, 1623–1640, DOI: 10.1016/j.joule.2023.06.017.
+[3] A. Braun, A. Rulev, S. Erat, M. Aycibin, E. Uslu, M. Winter et al., Experimental and computational structure study of the commercial NMC622 lithium-ion battery electrode, Journal of materials research, 2026, 41, 2589–2603, DOI: 10.1557/s43578-026-01938-y.
+[4] Q. Jacquet, N. Mozhzhukhina, P. N. O. Gillespie, G. Wittmann, L. P. Ramirez, F. G. Capone et al., A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2, arXiv preprint, 2024, arXiv:2403.18919, DOI: 10.1002/aenm.202401413.
+
+INSTRUCTIONS:
+- Write one Results-style paragraph (250-400 words) interpreting the quantitative results.
+- State the quantitative predictions with their uncertainties exactly as given; do not introduce, round differently, or infer any other numbers.
+- Explain which spectral changes drive the predictions, using the measured spectral changes and the attribution summary.
+- Interpret the trends against the retrieved passages and mark every literature-derived statement with the corresponding bracketed source number(s). Cite only the numbered sources listed above.
+- Do not speculate beyond the provided evidence; if the literature passages do not support a claim, do not make it.
+- Output the paragraph only, followed by a line 'References:' and the numbered source list you actually cited.

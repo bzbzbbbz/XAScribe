@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Operando Ni K-edge XANES spectra recorded at six states of charge from x=1.00 to x=0.31.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Six Ni K-edge XANES spectra ... recorded operando ... from the pristine state (x = 1.00 ... 3.27 V) to x = 0.31 (4.26 V)."
+  },
+  {
+    "claim": "Two neural-network regressors trained on DFT spectra (R²=0.981, 0.986) applied to CDF features.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Model: two neural-network regressors on cumulative-distribution (CDF) features ... trained on DFT spectra ... held-out R^2 = 0.981 for Ni oxidation state and 0.986 for Ni-O bond length"
+  },
+  {
+    "claim": "Oxidation-state scale anchored to pristine reference (Ni valence 2.67) with constant offset applied.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Valence calibration: the oxidation-state scale was aligned with a single reference, x = 1.00, 3.27 V, whose Ni valence is known to be 2.67; the same constant offset was applied to every spectrum."
+  },
+  {
+    "claim": "Ni oxidation state increases monotonically from 2.67 to 3.76±0.07, total change +1.09, slope -1.50.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Trend analysis: the predicted Ni oxidation state changes monotonically ... by +1.09 from x = 1.00 to x = 0.31 (least-squares slope -1.50 valence units per unit x); ... x = 0.31 ... 3.76 +/- 0.07"
+  },
+  {
+    "claim": "Intermediate oxidation states: 2.95±0.08 (x=0.85), 3.15±0.07 (x=0.70), 3.44±0.05 (x=0.50), 3.54±0.05 (x=0.41).",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Per-spectrum predictions: x = 0.85 ... 2.95 +/- 0.08; x = 0.70 ... 3.15 +/- 0.07; x = 0.50 ... 3.44 +/- 0.05; x = 0.41 ... 3.54 +/- 0.05"
+  },
+  {
+    "claim": "Ni–O bond length decreases monotonically from 1.977±0.001 to 1.896±0.004 Å, total contraction 0.081 Å.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Per-spectrum predictions: x = 1.00 ... 1.977 +/- 0.001 A; ... x = 0.31 ... 1.896 +/- 0.004 A. Trend analysis: ... changes monotonically by -0.081 A."
+  },
+  {
+    "claim": "Trends consistent with progressive blue shift in LiNiO₂ and Ni-rich oxides [1,4]; edge shifts interpreted as Ni⁴⁺/Ni³⁺/Ni²⁺ redox [4].",
+    "type": "literature",
+    "verdict": "partial",
+    "evidence": "[1]: 'This blue shift is usually interpreted in terms of Ni4+/Ni3+ redox activity.' [4] describes edge shift but not explicit redox interpretation."
+  },
+  {
+    "claim": "Measured spectral changes: rising-edge +1.97 eV, white-line max +2.83 eV, height +0.003; driven by rising-edge and post-edge per integrated gradients.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Measured spectral changes ... rising-edge half-height +1.97 eV, white-line maximum +2.83 eV, white-line height change +0.003. Attribution ... oxidation-state change = ... rising edge +0.55, post-edge +0.34 ..."
+  },
+  {
+    "claim": "Post-edge dominates attribution shares: 82% oxidation state, 75% bond length; rising edge 13% and 18%.",
+    "type": "numeric",
+    "verdict": "exact",
+    "evidence": "Attribution across the training spectra (mean |attribution| share): oxidation-state model ... post-edge 82%; bond-length model ... post-edge 75%."
+  },
+  {
+    "claim": "Post-edge dominance notable because rising-edge position alone may not fully capture Ni oxidation state due to Ni–O covalency [1,4].",
+    "type": "literature",
+    "verdict": "supported",
+    "evidence": "[1]: 'rising edge position alone may not be sufficient ... influenced by the nature of the Ni–O bonds.' [4]: 'DFT predicts that the local Ni-O bonding environment changes on delithiation.'"
+  },
+  {
+    "claim": "Bond-length contraction and oxidation-state increase consistent with pre-edge vs Ni–O correlation [1] and DFT-predicted Ni–O changes despite constant Ni charge [2].",
+    "type": "literature",
+    "verdict": "supported",
+    "evidence": "[1]: 'strong correlation ... between the pre-edge peak position and the Ni—O bond distances from EXAFS.' [2]: 'DFT calculations find the Ni charge to remain +2 ... predict that the local Ni-O bonding environment changes on delithiation.'"
+  },
+  {
+    "claim": "Pristine Ni–O bond length 1.977 Å and oxidation state 2.67 consistent with average Ni valence 2.7 for fresh NMC622 [3].",
+    "type": "literature",
+    "verdict": "partial",
+    "evidence": "[3]: 'average Ni valence in fresh material to be 2.7+.' Bond length consistency not addressed in [3]."
+  }
+]

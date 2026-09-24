@@ -1,0 +1,115 @@
+10 queries (planner: nvidia/nemotron-3-ultra-550b-a55b:free)
+   openalex   25 hits  'Ni K-edge XANES layered NMC cathode'
+   europepmc  25 hits  'Ni K-edge XANES layered NMC cathode'
+   arxiv       1 hits  'Ni K-edge XANES layered NMC cathode'
+   openalex   25 hits  'Operando Ni K-edge XAS NMC charge discharge'
+   europepmc  25 hits  'Operando Ni K-edge XAS NMC charge discharge'
+   arxiv       1 hits  'Operando Ni K-edge XAS NMC charge discharge'
+   openalex   25 hits  'Ni oxidation state calibration NMC reference compounds'
+   europepmc  25 hits  'Ni oxidation state calibration NMC reference compounds'
+   arxiv       1 hits  'Ni oxidation state calibration NMC reference compounds'
+   openalex   25 hits  'EXAFS Ni-O bond length layered NMC'
+   europepmc  25 hits  'EXAFS Ni-O bond length layered NMC'
+   arxiv       2 hits  'EXAFS Ni-O bond length layered NMC'
+   openalex   25 hits  'Charge compensation Ni redox NMC cathode'
+   europepmc  25 hits  'Charge compensation Ni redox NMC cathode'
+   arxiv       6 hits  'Charge compensation Ni redox NMC cathode'
+   openalex   25 hits  'In situ Ni K-edge XANES NMC cycling'
+   europepmc  25 hits  'In situ Ni K-edge XANES NMC cycling'
+   arxiv       2 hits  'In situ Ni K-edge XANES NMC cycling'
+   openalex   25 hits  'Ni K-edge valence calibration standards NMC'
+   europepmc  15 hits  'Ni K-edge valence calibration standards NMC'
+   arxiv       8 hits  'Ni K-edge valence calibration standards NMC'
+   openalex   25 hits  'EXAFS local structure Ni NMC cathode'
+   europepmc  25 hits  'EXAFS local structure Ni NMC cathode'
+   arxiv      15 hits  'EXAFS local structure Ni NMC cathode'
+   openalex   25 hits  'Review Ni K-edge XAS NMC cathode'
+   europepmc  25 hits  'Review Ni K-edge XAS NMC cathode'
+   arxiv       7 hits  'Review Ni K-edge XAS NMC cathode'
+   openalex   25 hits  'Ni K-edge XANES EXAFS NMC state charge'
+   europepmc  25 hits  'Ni K-edge XANES EXAFS NMC state charge'
+   arxiv       3 hits  'Ni K-edge XANES EXAFS NMC state charge'
+257 unique records; 0 excluded by rule
+   screened 15/65 with nvidia/nemotron-3-ultra-550b-a55b:free: 15/15 scored
+   screened 30/65 with z-ai/glm-5.2:free: 15/15 scored
+   screened 45/65 with nvidia/nemotron-3-ultra-550b-a55b:free: 15/15 scored
+   screened 60/65 with z-ai/glm-5.2:free: 15/15 scored
+   screened 65/65 with z-ai/glm-5.2:free: 5/5 scored
+16 records pass screening (threshold 0.6, screener z-ai/glm-5.2:free)
+   [ 1] full text Experimental and computational structure study of the commercial NMC62
+   [ 2] full text Effect of Annealing on Direct Recycled NMC Cathodes.
+   [ 3] full text Unravelling the Mechanism of Pulse Current Charging for Enhancing the 
+   [ 4] abstract Understanding the Overlithiation Properties of LiNi 0.6 Mn 0.2 Co 0.2 
+   [ 5] abstract Nickel, Manganese, and Cobalt Dissolution from Ni-Rich NMC and Their E
+   [ 6] abstract Nanoscale Morphological and Chemical Changes of High Voltage Lithium–M
+   [ 7] full text TiO6 as a Compensatory Structural Unit in Co-Free, High-Ni Layered Oxi
+   [ 8] full text Insights on the role of the covalent Ni-O bonds in LiNiO2 positive ele
+   [ 9] full text Operando Investigation of Zr Doping in NMC811 Cathode for High Energy 
+   [10] full text Exploring the Role of an Electrolyte Additive in Suppressing Surface R
+   [11] full text A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2
+   [12] full text Oxygen hole formation controls stability in LiNiO2 cathodes
+   [13] abstract Unraveling the Cationic and Anionic Redox Reactions in a Conventional 
+   [14] full text Framework Doping of Ni Enhances Pseudocapacitive Na-Ion Storage of (Ni
+   [15] full text Rapid Mapping of Lithiation Dynamics in Transition Metal Oxide Particl
+   [16] full text First-charge instabilities of layered-layered lithium-ion-battery mate
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 8365.46it/s]
+corpus: 16 papers (12 full text), 869 chunks -> C:\Users\Bill\Desktop\Maria Group\2025 LLM Hackathon for material science\xascribe_v3\corpora\ni_k_nmc
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 5626.19it/s]
+{
+  "generator": "z-ai/glm-5.2:free",
+  "auditor": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "corpus": "C:\\Users\\Bill\\Desktop\\Maria Group\\2025 LLM Hackathon for material science\\xascribe_v3\\corpora\\ni_k_nmc",
+  "n_hits": 15,
+  "n_sources": 4,
+  "hit_scores": [
+    0.9055088758468628,
+    0.8994461297988892,
+    0.8992722630500793,
+    0.8864761590957642,
+    0.8771780133247375,
+    0.8723580837249756,
+    0.8705187439918518,
+    0.8694026470184326,
+    0.8686132431030273,
+    0.8685822486877441,
+    0.8667623996734619,
+    0.8652981519699097,
+    0.8631323575973511,
+    0.8629883527755737,
+    0.8629794120788574
+  ],
+  "numeric_check": {
+    "n_numbers": 66,
+    "not_in_facts": [
+      "2.7"
+    ]
+  },
+  "audit_summary": {
+    "literature:partial": 2,
+    "literature:supported": 2,
+    "numeric:exact": 8,
+    "n_claims": 12
+  },
+  "corpus_summary": {
+    "planner": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "screener": "z-ai/glm-5.2:free",
+    "n_records": 257,
+    "n_passed_screening": 16,
+    "n_papers": 16,
+    "n_full_text": 12,
+    "n_chunks": 869,
+    "excluded": []
+  }
+}
+
+Operando Ni K-edge XANES spectra of an NMC622 pouch-cell cathode were recorded at six states of charge during the first charge, from the pristine state (x = 1.00, 3.27 V) to x = 0.31 (4.26 V). Two neural-network regressors trained on DFT-computed spectra (held-out R² = 0.981 for Ni oxidation state, 0.986 for Ni–O bond length) were applied to cumulative-distribution features of each spectrum. The oxidation-state scale was anchored to the pristine reference, whose Ni valence is known to be 2.67, and the same constant offset was applied to all spectra. The predicted Ni oxidation state increases monotonically from 2.67 at x = 1.00 to 3.76 ± 0.07 at x = 0.31, a total change of +1.09 (least-squares slope −1.50 valence units per unit x). Intermediate values are 2.95 ± 0.08 (x = 0.85, 3.73 V), 3.15 ± 0.07 (x = 0.70, 3.76 V), 3.44 ± 0.05 (x = 0.50, 3.92 V), and 3.54 ± 0.05 (x = 0.41, 4.08 V). The predicted Ni–O bond length decreases monotonically from 1.977 ± 0.001 Å to 1.896 ± 0.004 Å, a total contraction of 0.081 Å, with intermediate values of 1.965 ± 0.003 Å, 1.932 ± 0.006 Å, 1.918 ± 0.007 Å, and 1.910 ± 0.006 Å. These trends are consistent with the progressive blue shift of the Ni K-edge upon delithiation reported for LiNiO₂ and related Ni-rich layered oxides [1, 4], where edge-position shifts toward higher energy are conventionally interpreted as reflecting Ni⁴⁺/Ni³⁺/Ni²⁺ redox activity [4]. The measured spectral changes from x = 1.00 to x = 0.31—a rising-edge half-height shift of +1.97 eV, a white-line maximum shift of +2.83 eV, and a white-line height change of +0.003—are driven primarily by the rising-edge and post-edge regions, as indicated by integrated-gradient attribution of the x = 0.31 prediction relative to the reference: the oxidation-state change is attributed +0.55 to the rising edge, +0.34 to the post-edge, +0.26 to the white line, and −0.06 to the edge onset, while the Ni–O contraction is attributed −0.046 Å to the rising edge, −0.027 Å to the post-edge, −0.011 Å to the white line, and +0.003 Å to the edge onset. Across the training spectra, the post-edge dominates both models (mean |attribution| share 82% for oxidation state, 75% for bond length), followed by the rising edge (13% and 18%). This dominance of post-edge features is notable because the rising-edge position alone may not fully capture the Ni oxidation state, as it can be influenced by the covalent character of Ni–O bonds [1, 4]. The concurrent bond-length contraction and oxidation-state increase are consistent with the correlation between pre-edge peak position and Ni–O distances from EXAFS analysis reported for delithiated LiNiO₂ [1], and with DFT predictions that the local Ni–O bonding environment changes on delithiation even when the formal Ni charge remains approximately +2 [2]. The pristine Ni–O bond length of 1.977 ± 0.001 Å and the calibrated oxidation state of 2.67 are also consistent with the average Ni valence of 2.7 reported for fresh NMC622 [3].
+
+References:
+[1] J. J. H. Togonon, J.-N. Chotard, A. Longo, L. Stievano, L. Croguennec and A. Iadecola, Insights on the role of the covalent Ni-O bonds in LiNiO2 positive electrodes: A combined hard X-ray spectroscopy study, arXiv preprint, 2025, arXiv:2503.22383.
+[2] A. R. Genreith‐Schriever, H. Banerjee, A. S. Menon, E. N. Bassey, L. F. J. Piper, C. P. Grey et al., Oxygen hole formation controls stability in LiNiO2 cathodes, Joule, 2023, 7, 1623–1640, DOI: 10.1016/j.joule.2023.06.017.
+[3] A. Braun, A. Rulev, S. Erat, M. Aycibin, E. Uslu, M. Winter et al., Experimental and computational structure study of the commercial NMC622 lithium-ion battery electrode, Journal of materials research, 2026, 41, 2589–2603, DOI: 10.1557/s43578-026-01938-y.
+[4] Q. Jacquet, N. Mozhzhukhina, P. N. O. Gillespie, G. Wittmann, L. P. Ramirez, F. G. Capone et al., A fundamental correlative spectroscopic study on LixNiO2 and NaNiO2, arXiv preprint, 2024, arXiv:2403.18919, DOI: 10.1002/aenm.202401413.
+
+saved to C:\Users\Bill\Desktop\Maria Group\2025 LLM Hackathon for material science\xascribe_v3\paper\outputs\case_study_20260924_160159
+exit 0

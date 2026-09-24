@@ -1,0 +1,46 @@
+{
+  "generator": "z-ai/glm-5.2:free",
+  "auditor": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "corpus": "C:\\Users\\Bill\\Desktop\\Maria Group\\2025 LLM Hackathon for material science\\xascribe_v3\\corpora\\ni_k_nmc",
+  "n_hits": 15,
+  "n_sources": 4,
+  "hit_scores": [
+    0.9055088758468628,
+    0.8994461297988892,
+    0.8992722630500793,
+    0.8864761590957642,
+    0.8771780133247375,
+    0.8723580837249756,
+    0.8705187439918518,
+    0.8694026470184326,
+    0.8686132431030273,
+    0.8685822486877441,
+    0.8667623996734619,
+    0.8652981519699097,
+    0.8631323575973511,
+    0.8629883527755737,
+    0.8629794120788574
+  ],
+  "numeric_check": {
+    "n_numbers": 66,
+    "not_in_facts": [
+      "2.7"
+    ]
+  },
+  "audit_summary": {
+    "literature:partial": 2,
+    "literature:supported": 2,
+    "numeric:exact": 8,
+    "n_claims": 12
+  },
+  "corpus_summary": {
+    "planner": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "screener": "z-ai/glm-5.2:free",
+    "n_records": 257,
+    "n_passed_screening": 16,
+    "n_papers": 16,
+    "n_full_text": 12,
+    "n_chunks": 869,
+    "excluded": []
+  }
+}

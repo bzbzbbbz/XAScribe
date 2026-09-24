@@ -7,3 +7,4 @@ corpora/*/index/
 paper/outputs/case_study_*/
 .streamlit/secrets.toml
 .env
+paper/case_study_run_log*.txt

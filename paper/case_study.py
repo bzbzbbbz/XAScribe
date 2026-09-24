@@ -28,19 +28,23 @@ SOURCE_TITLE = "Cathode Lithiation Mechanism and Extended Cycling Effects Using 
 DESCRIPTION = ("Six Ni K-edge XANES spectra of a LiNi0.6Mn0.2Co0.2O2 (NMC622) cathode recorded operando during the first charge "
                "of a pouch cell, from the pristine state (x = 1.00 in LixNi0.6Mn0.2Co0.2O2, 3.27 V) to x = 0.31 (4.26 V).")
 GENERATOR = "z-ai/glm-5.2:free"
+AGENT = "z-ai/glm-5.2:free,nvidia/nemotron-3-ultra-550b-a55b:free,qwen/qwen3.8-27b:free"   # GLM first, fast fallback
 AUDITOR = "nvidia/nemotron-3-ultra-550b-a55b:free,qwen/qwen3.8-27b:free"
 
 
-def with_models(models, fn, *a, **k):
-    old = os.environ.get("XASCRIBE_LLM_MODEL")
+def with_models(models, fn, *a, retries=None, **k):
+    saved = {v: os.environ.get(v) for v in ("XASCRIBE_LLM_MODEL", "XASCRIBE_LLM_RETRIES")}
     os.environ["XASCRIBE_LLM_MODEL"] = models
+    if retries is not None:
+        os.environ["XASCRIBE_LLM_RETRIES"] = str(retries)
     try:
         return fn(*a, **k)
     finally:
-        if old is None:
-            os.environ.pop("XASCRIBE_LLM_MODEL", None)
-        else:
-            os.environ["XASCRIBE_LLM_MODEL"] = old
+        for v, old in saved.items():
+            if old is None:
+                os.environ.pop(v, None)
+            else:
+                os.environ[v] = old
 
 
 def main():
@@ -69,15 +73,15 @@ def main():
         spec = CorpusSpec(element="Ni", edge="K", material="layered NMC lithium-ion cathode",
                           properties=["oxidation state", "bond length"], target_papers=args.target,
                           exclude_dois=[SOURCE_DOI], exclude_title_patterns=[SOURCE_TITLE])
-        with_models(GENERATOR, build_corpus, spec, corpus)
+        with_models(AGENT, build_corpus, spec, corpus, retries=2)
     manifest = json.loads((corpus / "corpus_manifest.json").read_text(encoding="utf-8"))
     assert all(SOURCE_DOI not in (p.get("doi") or "") for p in manifest["papers"]), "source paper leaked into corpus"
     idx = ChunkIndex.load(corpus)
     query = report.retrieval_query(DESCRIPTION, a)
     hits = idx.search(query, k=20, min_score=0.30)[:15]
     prompt, sources = report.build_prompt(DESCRIPTION, facts, hits)
-    paragraph, gen_model = with_models(GENERATOR, report.generate, prompt)
-    claims, aud_model, aud_raw = with_models(AUDITOR, report.audit, paragraph, prompt)
+    paragraph, gen_model = with_models(GENERATOR, report.generate, prompt, retries=8)
+    claims, aud_model, aud_raw = with_models(AUDITOR, report.audit, paragraph, prompt, retries=4)
     run = dict(generator=gen_model, auditor=aud_model, corpus=str(corpus), n_hits=len(hits), n_sources=len(sources),
                hit_scores=[h["score"] for h in hits], numeric_check=report.numeric_check(paragraph, facts),
                audit_summary=report.summarise_audit(claims), corpus_summary={k: manifest[k] for k in
