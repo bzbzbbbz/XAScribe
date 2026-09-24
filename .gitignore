@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+_scratch*/
+# downloaded article texts and chunk indexes contain third-party text: rebuild locally, do not redistribute
+corpora/*/text/
+corpora/*/index/
+paper/outputs/case_study_*/
+.streamlit/secrets.toml
+.env
