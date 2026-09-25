@@ -1,0 +1,16 @@
+{
+  "sd_C_second_to_last": 0.0006446477138000469,
+  "sd_C_median_mid": 0.012614855249003073,
+  "sensitivity_ratio_tail_vs_mid": 63.64576653823513,
+  "mean_abs_grad_last3eV": 3.298929167217527,
+  "mean_abs_grad_median_elsewhere": 0.2517349674438013,
+  "spearman_intensity_ox_last10": [
+    0.8219329454760056,
+    0.9054450139646444
+  ],
+  "test_rmse_intact": 0.06005745781411743,
+  "test_rmse_occlude_last3eV": 0.2523287786663578,
+  "test_rmse_occlude_max_elsewhere": 0.17733175992272518,
+  "linear_tail_intensity_rmse": 0.21274024712278639,
+  "label_sd_test": 0.43329500477517185
+}
